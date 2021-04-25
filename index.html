@@ -4,14 +4,14 @@
         <meta charset="utf-8"/>
         <meta name="description" content="Nous sélectionnons des menus des plus grands restaurants gastronomiques hauts de gamme de New-York.Cherchez votre restaurant puis composez votre menu en ligne en quelques clics et enfin allez déguster sans attendre."/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="CSS/style.css"/>
+        <link rel="stylesheet" href="SASS/style-index.css"/>
         <script src="https://kit.fontawesome.com/e821dcf0e0.js" crossorigin="anonymous"></script>
         <title>Ohmyfood: entreprise de commande de repas gastronomiques en ligne dans les restaurants hauts gammes</title>
     </head>
     <body>
         <header>
-            <div>
-                <nav>
+            <div id="banner">
+                <nav class="nav">
                     <div>
                         <a href="index.html">
                             <h1>
@@ -19,19 +19,18 @@
                             </h1>
                         </a>
                     </div>
-                    <div>
+                    <div class="search-bar">
                         <i class="fas fa-map-marker-alt"></i>
                         <input type="search" id="city-search" name="city-search" aria-label="cherchez un restaurant gastronomique dans la ville de votre choix" placeholder="Paris, Belleville"/>
-                        <button>rechercher</button>
                     </div>      
                 </nav>
             </div>
-            <div>
-                <div>
+            <div id="introduction">
+                <div class="intro_text">
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
                 </div>
-                <div>
+                <div class="btn_explore">
                     <input type="submit" value="Explorez nos restaurants"/>
                 </div>
             </div>
