@@ -1,15 +1,6 @@
 /*fichies importes*/
 @import "mixins.scss";
-
-
-/*variables couleur*/
-$primary:#9356DC;
-$secondary:#FF79DA;
-$tertiary:#99E2D0;
-$color-map:#eaeaea;
-$dark-bg-color:#353535;
-$light-bg-color:#f6f6f6;
-$color-icone:#7e7e7e;
+@import "variables.scss";
 
 /*propriétés générales*/
 *{
@@ -29,28 +20,43 @@ body{
         flex-direction: column;
         align-items: center;
     }
+    & .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top:0.5em;
+        & img{
+           width: 10em ;
+        }
+    }
     & .search-bar{
         width: 100%;
-        height: 2.5rem;
+        height: 2.8rem;
+        box-shadow: -1px -8px 5px -6px rgba(126, 125, 125, 0.6);
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $color-map;
         & .fa-map-marker-alt{
-            font-size: 0.8rem;    
+            font-size: 0.9em;    
             color:$dark-bg-color;
-            margin-left: 60px;
+            /*margin-left: 4em;*/
+            width: 30%;
+            text-align: right;
         }
         input{
             /*max-width: min-content;*/
             background-color: transparent;
             border:none;
             color:$dark-bg-color;
-            margin-left:20px;
+            width: 60%;
+            margin-left:1em;   
             &::placeholder{
                 text-align: left;
-                font-size: 0.8rem;
-                color:$dark-bg-color;      
+                font-size: 0.9em;
+                color:$dark-bg-color;
+                font-weight: bold;   
             }
             &:focus{
                 outline-style: none;
@@ -64,24 +70,32 @@ body{
     flex-direction: column;
     align-content: center;
     align-items: center;
+    background-color: $light-bg-color;
+    padding-bottom:3em; 
     .intro_text{
-        width: 60%;
+        width: 100%;
         text-align: center;
         margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         & h2{
-            font-size: 1.3rem;
+            font-size: 1.5em;
+            width: 60%;
+            margin-bottom:0;
         }
         & p{
-            font-size: 0.8em;
+            font-size: 1.1em;
+            width: 90%;
         }
     }
     .btn_explore{
         width: 60%;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
+        margin-top:10px;
         input{
-            @include button_submit (60%,0.6em);
-            
+            @include button_submit (70%,3vw);  
         }
     }
 }

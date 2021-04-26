@@ -1,11 +1,13 @@
 @mixin button_submit($size-btn,$size-text){
         color: white;
         font-size:$size-text;
+        font-weight: bold;
         background:linear-gradient(180deg,#FF79DA,#9356DC);
-        border-radius: 20px;
+        border-radius: 20vw;
         border:none;
-        min-width:$size-btn;
-        height: 2rem;
+        box-shadow: 6px 7px 9px -5px rgba(0,0,0,0.67);
+        width:$size-btn;
+        height: 3.5em;
         cursor:pointer;
 }
 

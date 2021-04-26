@@ -31,9 +31,27 @@ body {
           align-items: center;
 }
 
+#banner .logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+#banner .logo img {
+  width: 10em;
+}
+
 #banner .search-bar {
   width: 100%;
-  height: 2.5rem;
+  height: 2.8rem;
+  -webkit-box-shadow: -1px -8px 5px -6px rgba(126, 125, 125, 0.6);
+          box-shadow: -1px -8px 5px -6px rgba(126, 125, 125, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,9 +65,11 @@ body {
 }
 
 #banner .search-bar .fa-map-marker-alt {
-  font-size: 0.8rem;
+  font-size: 0.9em;
   color: #353535;
-  margin-left: 60px;
+  /*margin-left: 4em;*/
+  width: 30%;
+  text-align: right;
 }
 
 #banner .search-bar input {
@@ -57,31 +77,36 @@ body {
   background-color: transparent;
   border: none;
   color: #353535;
-  margin-left: 20px;
+  width: 60%;
+  margin-left: 1em;
 }
 
 #banner .search-bar input::-webkit-input-placeholder {
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.9em;
   color: #353535;
+  font-weight: bold;
 }
 
 #banner .search-bar input:-ms-input-placeholder {
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.9em;
   color: #353535;
+  font-weight: bold;
 }
 
 #banner .search-bar input::-ms-input-placeholder {
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.9em;
   color: #353535;
+  font-weight: bold;
 }
 
 #banner .search-bar input::placeholder {
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.9em;
   color: #353535;
+  font-weight: bold;
 }
 
 #banner .search-bar input:focus {
@@ -102,20 +127,35 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f6f6f6;
+  padding-bottom: 3em;
 }
 
 #introduction .intro_text {
-  width: 60%;
+  width: 100%;
   text-align: center;
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #introduction .intro_text h2 {
-  font-size: 1.3rem;
+  font-size: 1.5em;
+  width: 60%;
+  margin-bottom: 0;
 }
 
 #introduction .intro_text p {
-  font-size: 0.8em;
+  font-size: 1.1em;
+  width: 90%;
 }
 
 #introduction .btn_explore {
@@ -126,17 +166,21 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10px;
 }
 
 #introduction .btn_explore input {
   color: white;
-  font-size: 0.6em;
+  font-size: 3vw;
+  font-weight: bold;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
-  border-radius: 20px;
+  border-radius: 20vw;
   border: none;
-  min-width: 60%;
-  height: 2rem;
+  -webkit-box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
+          box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
+  width: 70%;
+  height: 3.5em;
   cursor: pointer;
 }
 /*# sourceMappingURL=style-index.css.map */
