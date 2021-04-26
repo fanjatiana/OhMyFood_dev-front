@@ -14,11 +14,11 @@ body {
 }
 
 /*header*/
-#banner {
+.banner {
   width: 100%;
 }
 
-#banner .nav {
+.banner > .nav {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,15 +33,15 @@ body {
   background-color: none;
 }
 
-#banner .logo {
+.banner .logo {
   margin-top: 0.5em;
 }
 
-#banner .logo img {
+.banner .logo img {
   width: 10em;
 }
 
-#banner .search-bar {
+.banner .search-bar {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,56 +62,57 @@ body {
           box-shadow: -1px -8px 5px -6px rgba(126, 125, 125, 0.6);
 }
 
-#banner .search-bar .fa-map-marker-alt {
+.banner .search-bar .fa-map-marker-alt {
   font-size: 0.9em;
   color: #353535;
-  /*margin-left: 4em;*/
-  width: 30%;
+  width: 10%;
   text-align: right;
 }
 
-#banner .search-bar input {
-  /*max-width: min-content;*/
+.banner .search-bar input {
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   background-color: transparent;
   border: none;
   color: #353535;
-  width: 60%;
+  width: 90%;
   margin-left: 1em;
 }
 
-#banner .search-bar input::-webkit-input-placeholder {
+.banner .search-bar input::-webkit-input-placeholder {
   text-align: left;
   font-size: 0.9em;
   color: #353535;
   font-weight: bold;
 }
 
-#banner .search-bar input:-ms-input-placeholder {
+.banner .search-bar input:-ms-input-placeholder {
   text-align: left;
   font-size: 0.9em;
   color: #353535;
   font-weight: bold;
 }
 
-#banner .search-bar input::-ms-input-placeholder {
+.banner .search-bar input::-ms-input-placeholder {
   text-align: left;
   font-size: 0.9em;
   color: #353535;
   font-weight: bold;
 }
 
-#banner .search-bar input::placeholder {
+.banner .search-bar input::placeholder {
   text-align: left;
   font-size: 0.9em;
   color: #353535;
   font-weight: bold;
 }
 
-#banner .search-bar input:focus {
+.banner .search-bar input:focus {
   outline-style: none;
 }
 
-#introduction {
+.introduction {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,7 +128,7 @@ body {
   padding-bottom: 3em;
 }
 
-#introduction .intro_text {
+.introduction > .intro_text {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,18 +145,18 @@ body {
   text-align: center;
 }
 
-#introduction .intro_text h2 {
+.introduction > .intro_text h2 {
   font-size: 1.5em;
   width: 60%;
   margin-bottom: 0;
 }
 
-#introduction .intro_text p {
+.introduction > .intro_text p {
   font-size: 1.1em;
   width: 90%;
 }
 
-#introduction .btn_explore {
+.introduction .btn_explore {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,13 +168,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*width: 60%;
-        display: flex;
-        justify-content: center;*/
   margin-top: 10px;
 }
 
-#introduction .btn_explore input {
+.introduction .btn_explore input {
   color: white;
   font-size: 3vw;
   font-weight: bold;
@@ -186,5 +184,20 @@ body {
   width: 70%;
   height: 3.5em;
   cursor: pointer;
+}
+
+.block_operation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: none;
 }
 /*# sourceMappingURL=style-index.css.map */

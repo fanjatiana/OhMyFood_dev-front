@@ -13,9 +13,9 @@ body{
     padding:0;
 }
 /*header*/
-#banner{
+.banner{
     width: 100%;
-    .nav{
+    > .nav{
         @include block-column(none);
     }
     & .logo {
@@ -33,16 +33,15 @@ body{
         & .fa-map-marker-alt{
             font-size: 0.9em;    
             color:$dark-bg-color;
-            /*margin-left: 4em;*/
-            width: 30%;
+            width: 10%;
             text-align: right;
         }
         input{
-            /*max-width: min-content;*/
+            max-width: min-content;
             background-color: transparent;
             border:none;
             color:$dark-bg-color;
-            width: 60%;
+            width: 90%;
             margin-left:1em;   
             &::placeholder{
                 text-align: left;
@@ -56,10 +55,10 @@ body{
         }
     }
 }
-#introduction{
+.introduction{
     @include block-column;
     padding-bottom:3em; 
-    .intro_text{
+    > .intro_text{
         @include block-column(none);
         margin-top: 1rem;
         text-align: center;
@@ -75,12 +74,13 @@ body{
     }
     .btn_explore{
         @include block-row(60%);
-        /*width: 60%;
-        display: flex;
-        justify-content: center;*/
         margin-top:10px;
         input{
             @include button_submit (70%,3vw);  
         }
     }
 }
+.block_operation{
+    @include block-column(none);
+}
+
