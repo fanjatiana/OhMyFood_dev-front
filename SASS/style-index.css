@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*fichies importes*/
 /*variables couleur*/
+/*variables taille*/
 /*propriétés générales*/
 * {
   font-size: 1rem;
@@ -199,5 +200,85 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: none;
+}
+
+.block_operation > .title {
+  width: 100%;
+}
+
+.block_operation > .title h3 {
+  width: 90%;
+  margin: 1.5em  auto;
+  font-size: 1.5em;
+}
+
+.block_operation .block_list {
+  width: 100%;
+}
+
+.block_operation .block_list ol {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: none;
+}
+
+.block_operation .block_list ol > li {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px #f6f6f6 solid;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
+          box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
+  margin-bottom: 2em;
+  height: 4em;
+  position: relative;
+}
+
+.block_operation .block_list ol > li:nth-child(3) {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+
+.block_operation .block_list ol > li .fas {
+  margin: 0 2em;
+}
+
+.block_operation .block_list ol > li .fas.fa-store {
+  color: #9356DC;
+}
+
+.block_operation .block_list ol > li > p:nth-child(1) {
+  border: 1px black solid;
+  border-radius: 100%;
+  position: absolute;
+  left: -10px;
+  padding: 2px 7px;
+  color: white;
+  background: #9356DC;
 }
 /*# sourceMappingURL=style-index.css.map */
