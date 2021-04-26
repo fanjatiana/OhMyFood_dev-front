@@ -16,28 +16,20 @@ body{
 #banner{
     width: 100%;
     .nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include block-column(none);
     }
     & .logo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
         margin-top:0.5em;
         & img{
            width: 10em ;
         }
     }
     & .search-bar{
-        width: 100%;
-        height: 2.8rem;
-        box-shadow: -1px -8px 5px -6px rgba(126, 125, 125, 0.6);
-        display: flex;
-        justify-content: center;
+        @include block-row(100%);
         align-items: center;
         background-color: $color-map;
+        height: 2.8rem;
+        box-shadow: -1px -8px 5px -6px rgba(126, 125, 125, 0.6);
         & .fa-map-marker-alt{
             font-size: 0.9em;    
             color:$dark-bg-color;
@@ -65,20 +57,12 @@ body{
     }
 }
 #introduction{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    background-color: $light-bg-color;
+    @include block-column;
     padding-bottom:3em; 
     .intro_text{
-        width: 100%;
-        text-align: center;
+        @include block-column(none);
         margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
         & h2{
             font-size: 1.5em;
             width: 60%;
@@ -90,9 +74,10 @@ body{
         }
     }
     .btn_explore{
-        width: 60%;
+        @include block-row(60%);
+        /*width: 60%;
         display: flex;
-        justify-content: center;
+        justify-content: center;*/
         margin-top:10px;
         input{
             @include button_submit (70%,3vw);  
