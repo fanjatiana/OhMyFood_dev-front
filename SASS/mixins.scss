@@ -1,3 +1,11 @@
-@mixin purplebutton{
-    background: blueviolet;
+@mixin button_submit($size-btn,$size-text){
+        color: white;
+        font-size:$size-text;
+        background:linear-gradient(180deg,#FF79DA,#9356DC);
+        border-radius: 20px;
+        border:none;
+        min-width:$size-btn;
+        height: 2rem;
+        cursor:pointer;
 }
+

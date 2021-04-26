@@ -1,5 +1,6 @@
 /*fichies importes*/
-@import url(mixins.scss);
+@import "mixins.scss";
+
 
 /*variables couleur*/
 $primary:#9356DC;
@@ -75,13 +76,12 @@ body{
         }
     }
     .btn_explore{
-        width: 100%;
+        width: 60%;
         display: flex;
-        justify-content: center;
+        justify-content: center; 
         input{
-            height: 3rem;
-            padding:0 1rem;
-
+            @include button_submit (60%,0.6em);
+            
         }
     }
 }
