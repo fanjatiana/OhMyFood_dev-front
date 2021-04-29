@@ -2,11 +2,11 @@
         color: white;
         font-size:$size-text;
         font-weight: bold;
-        background:linear-gradient(180deg,#FF79DA,#9356DC);
+        background:linear-gradient($secondary,$primary);
         border-radius: 20vw;
         border:none;
         box-shadow: 6px 7px 9px -5px rgba(0,0,0,0.67);
-        width:$size-btn;
+        max-width:$size-btn;
         height: 3.5em;
         cursor:pointer;
 }
