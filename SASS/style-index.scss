@@ -90,40 +90,40 @@ body{
             font-size: $title-size;
         }
     }
-    & .block_list{
-        width: 100%;   
-        & ol{
-            list-style-type: none;
-            padding-left: 0;
-            @include block-column(none);
-            > li{
-            @include block-row(90%);
-            justify-content: flex-start;
-            align-items: center;
-            border:1px $light-bg-color solid;
-            border-radius:20px;
-            box-shadow: 6px 7px 9px -5px rgba(0,0,0,0.67);
-            margin-bottom: 2em;
-            height: 4em;
-            position:relative;
-            &:nth-child(3){
-                background-color: rgba(147,86,220,0.1);
+}
+.block_list{
+    width: 100%;   
+    & ol{
+        list-style-type: none;
+        padding-left: 0;
+        @include block-column(none);
+        > li{
+        @include block-row(90%);
+        justify-content: flex-start;
+        align-items: center;
+        border:1px $light-bg-color solid;
+        border-radius:20px;
+        box-shadow: 6px 7px 9px -5px rgba(0,0,0,0.67);
+        margin-bottom: 2em;
+        height: 4em;
+        position:relative;
+        &:nth-child(3){
+            background-color: rgba(147,86,220,0.1);
+        }
+        .fas{
+            margin:0 2em;
+            &.fa-store{
+                color: $primary;
             }
-            .fas{
-                margin:0 2em;
-                &.fa-store{
-                    color: $primary;
-                }
-            }
-            > p:nth-child(1){
-                border: 1px black solid;
-                border-radius: 100%;
-                position: absolute;
-                left: -10px;
-                padding: 2px 7px;
-                color: white;
-                background: $primary;
-            }
+        }
+        > p:nth-child(1){
+            border: 1px black solid;
+            border-radius: 100%;
+            position: absolute;
+            left: -10px;
+            padding: 2px 7px;
+            color: white;
+            background: $primary;
             }
         }
     }
