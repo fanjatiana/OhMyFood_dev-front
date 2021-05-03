@@ -11,8 +11,8 @@
         cursor:pointer;
 }
 
-@mixin block-column ($colour:$light-bg-color){
-        width: 100%;
+@mixin block-column ($colour:$light-bg-color, $size:100%){
+        width: $size;;
         display: flex;
         flex-direction: column;
         align-items: center;

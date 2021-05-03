@@ -14,7 +14,8 @@ body {
   padding: 0;
 }
 
-/*header*/
+/*******header***********/
+/*banniere du site*/
 .banner {
   width: 100%;
 }
@@ -113,6 +114,7 @@ body {
   outline-style: none;
 }
 
+/*block presentation*/
 .introduction {
   width: 100%;
   display: -webkit-box;
@@ -192,6 +194,8 @@ body {
           box-shadow: 6px 7px 9px -5px #9356DC;
 }
 
+/*************Main**********/
+/*block fonctionnement du site*/
 .block_operation {
   width: 100%;
   display: -webkit-box;
@@ -285,5 +289,121 @@ body {
   padding: 2px 7px;
   color: white;
   background: #9356DC;
+}
+
+/*block restaurant*/
+.block_restaurant {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+
+.block_restaurant > .title {
+  width: 100%;
+  padding-top: 2em;
+}
+
+.block_restaurant > .title h3 {
+  width: 90%;
+  margin: 1.1em  auto;
+  font-size: 1.5em;
+}
+
+/*block liste des restaurants*/
+.restaurant_list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: none;
+}
+
+.restaurant_list article {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: none;
+  /*border:1px black solid;*/
+  border-radius: 15px;
+  -webkit-box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
+          box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
+  margin: 1em;
+}
+
+.restaurant_list a {
+  width: 100%;
+  /*border: 1px black solid;*/
+  background-color: white;
+  border-radius: 15px;
+}
+
+.restaurant_list a:link {
+  text-decoration: none;
+}
+
+.restaurant_list a .part_img img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-style: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 175px;
+}
+
+.restaurant_list a .part_text {
+  width: 95%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.restaurant_list a .part_text > .info {
+  width: 80%;
+}
+
+.restaurant_list a .part_text > .info h4, .restaurant_list a .part_text > .info p {
+  font-size: 1.1em;
+  margin: 0.5em;
+}
+
+.restaurant_list a .part_text .icone_favorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.restaurant_list a .part_text .icone_favorite i {
+  font-size: 1.8em;
+  margin-top: 0.3em;
 }
 /*# sourceMappingURL=style-index.css.map */

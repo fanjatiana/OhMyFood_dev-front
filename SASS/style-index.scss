@@ -12,7 +12,8 @@ body{
     margin:0;
     padding:0;
 }
-/*header*/
+/*******header***********/
+/*banniere du site*/
 .banner{
     width: 100%;
     > .nav{
@@ -55,6 +56,7 @@ body{
         }
     }
 }
+/*block presentation*/
 .introduction{
     @include block-column;
     padding-bottom:3em; 
@@ -85,7 +87,8 @@ body{
        
     }
 }
-
+/*************Main**********/
+/*block fonctionnement du site*/
 .block_operation{
     @include block-column(none);
     > .title{
@@ -132,6 +135,76 @@ body{
             background: $primary;
             }
         }
+    }
+}
+/*block restaurant*/
+.block_restaurant{
+    background-color: $light-bg-color;
+    width: 100%;
+    > .title{
+        width: 100%;
+        padding-top: 2em;
+        & h3{
+            width: 90%;
+            margin: 1.1em  auto;
+            font-size: $title-size;
+        }
+    }
+}
+/*block liste des restaurants*/
+.restaurant_list{
+    @include block-column (none);
+    & article {
+        @include block-column (none, 90%);
+        /*border:1px black solid;*/
+        border-radius: 15px;
+        box-shadow: 6px 7px 9px -5px rgba(0,0,0,0.67);
+        margin: 1em;
+    }
+    & a{
+        width: 100%;
+        /*border: 1px black solid;*/
+        background-color: white;
+        border-radius: 15px;
+        &:link{
+            text-decoration: none;
+        }
+        & .part_img{
+            img{
+                width: 100%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border-style: none;
+                object-fit: cover;
+                height: 175px;
+            }
+        }
+        & .part_text{
+            width: 95%;
+            margin:auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: black;
+            padding-top:0.5em;
+            padding-bottom: 0.5em;
+            > .info{
+                width: 80%;
+                h4,p{
+                    font-size: 1.1em;
+                    margin: 0.5em;
+                }
+            }
+            & .icone_favorite{
+                display: flex;
+                width: 20%;
+                justify-content: center;
+                i{
+                    font-size:1.8em;
+                    margin-top:0.3em;
+                }
+            }
+        }            
     }
 }
 
