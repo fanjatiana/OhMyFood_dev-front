@@ -70,7 +70,7 @@ body{
             margin-bottom:0;
         }
         & p{
-            font-size: 1.1em;
+            font-size: 1em;
             width: 90%;
         }
     }
@@ -91,6 +91,7 @@ body{
 /*block fonctionnement du site*/
 .block_operation{
     @include block-column(none);
+    padding-top: 2em;
     > .title{
         width: 100%;
         & h3{
@@ -113,6 +114,7 @@ body{
         border:1px $light-bg-color solid;
         border-radius:20px;
         box-shadow: 6px 7px 9px -5px rgba(0,0,0,0.67);
+        background-color: $light-bg-color;
         margin-bottom: 2em;
         height: 4em;
         position:relative;
@@ -121,6 +123,8 @@ body{
         }
         .fas{
             margin:0 2em;
+            color: $color-icone;
+            font-size: 1.2em;
             &.fa-store{
                 color: $primary;
             }
@@ -141,6 +145,7 @@ body{
 .block_restaurant{
     background-color: $light-bg-color;
     width: 100%;
+    padding-bottom: 5em;
     > .title{
         width: 100%;
         padding-top: 2em;
@@ -207,4 +212,38 @@ body{
         }            
     }
 }
+/*****FOOTER****/
+.container{
+    width: 100%;
+    background-color:$dark-bg-color;
+    padding-top: 1em;
+    padding-bottom:1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    h4{
+        width: 90%;
+        margin-bottom: 0;
+        img{
+            width: 30%;
+            filter: invert(100%);
+        }    
+    }
+    & .info_omyfood{
+        width: 90%;
+        padding-left: 0;
+        > li{
+            list-style-type: none;
+            margin-bottom: 0.5em;
+            & a{
+                text-decoration: none;
+                color: #FFF ;
+                & .fas{
+                    width: 8%;
+                }  
+            }
+        }
+    }  
+}
+
 

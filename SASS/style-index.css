@@ -149,13 +149,13 @@ body {
 }
 
 .introduction > .intro_text h2 {
-  font-size: 1.5em;
+  font-size: 1.1em;
   width: 60%;
   margin-bottom: 0;
 }
 
 .introduction > .intro_text p {
-  font-size: 1.1em;
+  font-size: 1em;
   width: 90%;
 }
 
@@ -186,6 +186,8 @@ body {
           box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
   max-width: 100%;
   height: 3.5em;
+  padding-left: 1em;
+  padding-right: 1em;
   cursor: pointer;
 }
 
@@ -209,6 +211,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: none;
+  padding-top: 2em;
 }
 
 .block_operation > .title {
@@ -218,7 +221,7 @@ body {
 .block_operation > .title h3 {
   width: 90%;
   margin: 1.5em  auto;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 .block_list {
@@ -264,6 +267,7 @@ body {
   border-radius: 20px;
   -webkit-box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
           box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
+  background-color: #f6f6f6;
   margin-bottom: 2em;
   height: 4em;
   position: relative;
@@ -275,6 +279,8 @@ body {
 
 .block_list ol > li .fas {
   margin: 0 2em;
+  color: #7e7e7e;
+  font-size: 1.2em;
 }
 
 .block_list ol > li .fas.fa-store {
@@ -295,6 +301,7 @@ body {
 .block_restaurant {
   background-color: #f6f6f6;
   width: 100%;
+  padding-bottom: 5em;
 }
 
 .block_restaurant > .title {
@@ -305,7 +312,7 @@ body {
 .block_restaurant > .title h3 {
   width: 90%;
   margin: 1.1em  auto;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 /*block liste des restaurants*/
@@ -405,5 +412,53 @@ body {
 .restaurant_list a .part_text .icone_favorite i {
   font-size: 1.8em;
   margin-top: 0.3em;
+}
+
+/*****FOOTER****/
+.container {
+  width: 100%;
+  background-color: #353535;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container h4 {
+  width: 90%;
+  margin-bottom: 0;
+}
+
+.container h4 img {
+  width: 30%;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.container .info_omyfood {
+  width: 90%;
+  padding-left: 0;
+}
+
+.container .info_omyfood > li {
+  list-style-type: none;
+  margin-bottom: 0.5em;
+}
+
+.container .info_omyfood > li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.container .info_omyfood > li a .fas {
+  width: 8%;
 }
 /*# sourceMappingURL=style-index.css.map */
