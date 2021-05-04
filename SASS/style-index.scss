@@ -17,7 +17,7 @@ body{
 .banner{
     width: 100%;
     > .nav{
-        @include block-column(none);
+        @include block-column(#FFF);
     }
     & .logo {
         margin-top:0.5em;
@@ -61,7 +61,7 @@ body{
     @include block-column;
     padding-bottom:3em; 
     > .intro_text{
-        @include block-column(none);
+        @include block-column();
         margin-top: 1rem;
         text-align: center;
         & h2{
@@ -90,7 +90,7 @@ body{
 /*************Main**********/
 /*block fonctionnement du site*/
 .block_operation{
-    @include block-column(none);
+    @include block-column(#FFF);
     padding-top: 2em;
     > .title{
         width: 100%;
@@ -106,7 +106,7 @@ body{
     & ol{
         list-style-type: none;
         padding-left: 0;
-        @include block-column(none);
+        @include block-column();
         > li{
         @include block-row(90%);
         justify-content: flex-start;
@@ -158,9 +158,9 @@ body{
 }
 /*block liste des restaurants*/
 .restaurant_list{
-    @include block-column (none);
+    @include block-column ();
     & article {
-        @include block-column (none, 90%);
+        @include block-column ($light-bg-color, 90%);
         /*border:1px black solid;*/
         border-radius: 15px;
         box-shadow: 6px 7px 9px -5px rgba(0,0,0,0.67);
