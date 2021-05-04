@@ -1,3 +1,4 @@
+/*bouton call-to-action:explorer nos menus et commander*/
 @mixin button_submit($size-btn,$size-text, $padding:0 1em){
         color: white;
         font-size:$size-text;
@@ -12,6 +13,7 @@
         cursor:pointer;
 }
 
+/*propriétés flexbox*/
 @mixin block-column ($colour:$light-bg-color, $size:100%){
         width: $size;;
         display: flex;
@@ -20,10 +22,25 @@
         background-color: $colour;
 }
 
-@mixin block-row ($size){
+@mixin block-row ($size,$position, $y-position){
         width: $size;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: $position;
+        align-items: $y-position;
 }
 
+/*background image des menus*/
+
+@mixin bg-image-property{
+        width: 100%;
+        background-color: $light-bg-color;
+        background-repeat:no-repeat;
+        background-attachment:local;
+        background-size:cover;
+        background-position-x: center;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+}

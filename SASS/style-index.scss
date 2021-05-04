@@ -12,50 +12,55 @@ body{
     margin:0;
     padding:0;
 }
-/*******header***********/
+/********************************HEADER***********************************/
+
 /*banniere du site*/
 .banner{
     width: 100%;
     > .nav{
         @include block-column(#FFF);
     }
-    & .logo {
-        margin-top:0.5em;
-        & img{
-           width: 10em ;
-        }
+}
+
+/*logo*/
+.logo {
+    margin-top:0.5em;
+    & img{
+        width: 10em ;
     }
-    & .search-bar{
-        @include block-row(100%);
-        align-items: center;
-        background-color: $color-map;
-        height: 2.8rem;
-        box-shadow: -1px -8px 5px -6px rgba(126, 125, 125, 0.6);
-        & .fa-map-marker-alt{
-            font-size: 0.9em;    
+}
+
+/*barre de recherche*/
+.search-bar{
+    @include block-row(100%,center,center);
+    background-color: $color-map;
+    height: 2.8rem;
+    box-shadow: -1px -8px 5px -6px rgba(126, 125, 125, 0.6);
+    & .fa-map-marker-alt{
+        font-size: 0.9em;    
+        color:$dark-bg-color;
+        width: 10%;
+        text-align: right;
+    }
+    input{
+        max-width: min-content;
+        background-color: transparent;
+        border:none;
+        color:$dark-bg-color;
+        width: 90%;
+        margin-left:1em;   
+        &::placeholder{
+            text-align: left;
+            font-size: 0.9em;
             color:$dark-bg-color;
-            width: 10%;
-            text-align: right;
+            font-weight: bold;   
         }
-        input{
-            max-width: min-content;
-            background-color: transparent;
-            border:none;
-            color:$dark-bg-color;
-            width: 90%;
-            margin-left:1em;   
-            &::placeholder{
-                text-align: left;
-                font-size: 0.9em;
-                color:$dark-bg-color;
-                font-weight: bold;   
-            }
-            &:focus{
-                outline-style: none;
-            }
+        &:focus{
+            outline-style: none;
         }
     }
 }
+
 /*block presentation*/
 .introduction{
     @include block-column;
@@ -74,21 +79,26 @@ body{
             width: 90%;
         }
     }
-    .btn_explore{
-        @include block-row(60%);
-        margin-top:10px;
-        .call-to-action{
-            @include button_submit (100%,1rem);
-            &:hover{
-                box-shadow: 6px 7px 9px -5px $primary;
-            }
-            
-        }
-       
-    }
 }
-/*************Main**********/
+
+/*bouton explorez nos restaurants*/
+.btn_explore{
+    @include block-row(60%,center,center);
+    margin-top:10px;
+    .call-to-action{
+        @include button_submit (100%,1rem);
+        &:hover{
+            box-shadow: 6px 7px 9px -5px $primary;
+        }
+        
+    }
+    
+}
+
+/********************************Main************************************/
+
 /*block fonctionnement du site*/
+/*titre de la partie fonctionnement du site*/
 .block_operation{
     @include block-column(#FFF);
     padding-top: 2em;
@@ -101,16 +111,16 @@ body{
         }
     }
 }
+
+/*liste d' étapes à suivre pour commander*/
 .block_list{
-    width: 100%;   
+    width: 100%; 
     & ol{
         list-style-type: none;
         padding-left: 0;
-        @include block-column();
+        @include block-column(#FFF);
         > li{
-        @include block-row(90%);
-        justify-content: flex-start;
-        align-items: center;
+        @include block-row(90%, flex-star,center);
         border:1px $light-bg-color solid;
         border-radius:20px;
         box-shadow: 6px 7px 9px -5px rgba(0,0,0,0.67);
@@ -141,6 +151,7 @@ body{
         }
     }
 }
+/*partie liste des restaurants*/
 /*block restaurant*/
 .block_restaurant{
     background-color: $light-bg-color;
@@ -166,61 +177,55 @@ body{
         box-shadow: 6px 7px 9px -5px rgba(0,0,0,0.67);
         margin: 1em;
     }
-    & a{
+}
+/*cartes cliquables*/
+.card{
+    width: 100%;
+    /*border: 1px black solid;*/
+    background-color: white;
+    border-radius: 15px;
+    &:link{
+        text-decoration: none;
+    }
+    img{
         width: 100%;
-        /*border: 1px black solid;*/
-        background-color: white;
-        border-radius: 15px;
-        &:link{
-            text-decoration: none;
-        }
-        & .part_img{
-            img{
-                width: 100%;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-                border-style: none;
-                object-fit: cover;
-                height: 175px;
-            }
-        }
-        & .part_text{
-            width: 95%;
-            margin:auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            color: black;
-            padding-top:0.5em;
-            padding-bottom: 0.5em;
-            > .info{
-                width: 80%;
-                h4,p{
-                    font-size: 1.1em;
-                    margin: 0.5em;
-                }
-            }
-            & .icone_favorite{
-                display: flex;
-                width: 20%;
-                justify-content: center;
-                i{
-                    font-size:1.8em;
-                    margin-top:0.3em;
-                }
-            }
-        }            
+        border-top-left-radius: 1.1em;
+        border-top-right-radius:1.1em;
+        border-style: none;
+        object-fit: cover;
+        height: 175px;
     }
 }
-/*****FOOTER****/
+/*titre des cartes*/
+.part_text{
+    @include block-row (95%,space-between, center);
+    margin:auto;
+    color: black;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
+    > .info{
+        width: 80%;
+        h4,p{
+            font-size: 1.1em;
+            margin: 0.5em;
+        }
+    }
+}
+/*icones coeur*/
+.icone_favorite{
+    @include block-row (20%,center,center);
+    i{
+        font-size:1.8em;
+        margin-top:0.3em;
+    }
+}
+               
+/**********************************FOOTER*******************************/
+/*propriétés générales du footer*/
 .container{
-    width: 100%;
-    background-color:$dark-bg-color;
+    @include block-column($dark-bg-color,100%);
     padding-top: 1em;
     padding-bottom:1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items:  center;
     h4{
         width: 90%;
         margin-bottom: 0;
@@ -229,21 +234,23 @@ body{
             filter: invert(100%);
         }    
     }
-    & .info_omyfood{
-        width: 90%;
-        padding-left: 0;
-        > li{
-            list-style-type: none;
-            margin-bottom: 0.5em;
-            & a{
-                text-decoration: none;
-                color: #FFF ;
-                & .fas{
-                    width: 8%;
-                }  
-            }
-        }
-    }  
 }
+/*liens vers les infos complémentaires du site omyfood*/
+.info_omyfood{
+    width: 90%;
+    padding-left: 0;
+    > li{
+        list-style-type: none;
+        margin-bottom: 0.5em;
+        & a{
+            text-decoration: none;
+            color: #FFF ;
+            & .fas{
+                width: 8%;
+            }  
+        }
+    }
+}  
+
 
 
