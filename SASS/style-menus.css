@@ -26,11 +26,11 @@ body {
 
 /********************************HEADER***********************************/
 /*banniere du site*/
-.banner {
+.nav {
   width: 100%;
 }
 
-.banner > .nav {
+.nav > .banner {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,42 +81,49 @@ body {
   color: #353535;
   width: 10%;
   text-align: right;
+  position: absolute;
+  left: 17%;
+  padding-top: 1em;
+}
+
+.search-bar label {
+  width: 100%;
 }
 
 .search-bar input {
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
   background-color: transparent;
+  width: 100%;
   border: none;
   color: #353535;
-  width: 90%;
-  margin-left: 1em;
+  position: relative;
+  left: 0;
+  height: 2.7em;
+  text-align: center;
 }
 
 .search-bar input::-webkit-input-placeholder {
-  text-align: left;
+  text-align: center;
   font-size: 0.9em;
   color: #353535;
   font-weight: bold;
 }
 
 .search-bar input:-ms-input-placeholder {
-  text-align: left;
+  text-align: center;
   font-size: 0.9em;
   color: #353535;
   font-weight: bold;
 }
 
 .search-bar input::-ms-input-placeholder {
-  text-align: left;
+  text-align: center;
   font-size: 0.9em;
   color: #353535;
   font-weight: bold;
 }
 
 .search-bar input::placeholder {
-  text-align: left;
+  text-align: center;
   font-size: 0.9em;
   color: #353535;
   font-weight: bold;
@@ -124,6 +131,8 @@ body {
 
 .search-bar input:focus {
   outline-style: none;
+  background-color: #FFF;
+  z-index: 2;
 }
 
 /*block presentation*/
@@ -207,8 +216,9 @@ body {
 }
 
 .btn_explore .call-to-action:hover {
-  -webkit-box-shadow: 6px 7px 9px -5px #9356DC;
-          box-shadow: 6px 7px 9px -5px #9356DC;
+  -webkit-box-shadow: 9px 7px 12px 2px rgba(61, 0, 92, 0.75);
+          box-shadow: 9px 7px 12px 2px rgba(61, 0, 92, 0.75);
+  opacity: 0.85;
 }
 
 /********************************Main************************************/
@@ -833,7 +843,8 @@ article .price > p {
 }
 
 .btn_order .call-to-action:hover {
-  -webkit-box-shadow: 6px 7px 9px -5px #9356DC;
-          box-shadow: 6px 7px 9px -5px #9356DC;
+  -webkit-box-shadow: 9px 7px 12px 2px rgba(61, 0, 92, 0.75);
+          box-shadow: 9px 7px 12px 2px rgba(61, 0, 92, 0.75);
+  opacity: 0.85;
 }
 /*# sourceMappingURL=style-menus.css.map */
