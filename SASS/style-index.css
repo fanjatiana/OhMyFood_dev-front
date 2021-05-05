@@ -3,6 +3,18 @@
 /*bouton call-to-action:explorer nos menus et commander*/
 /*propriétés flexbox*/
 /*background image des menus*/
+/*@mixin bg-image-property{()
+        width: 100%;
+        background-color: $light-bg-color;
+        background-repeat:no-repeat;
+        background-attachment:local;
+        background-size:cover;
+        background-position-x: center;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+}*/
 /*variables couleur*/
 /*variables taille*/
 /*propriétés générales*/

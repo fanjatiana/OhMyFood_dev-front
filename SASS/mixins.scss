@@ -30,17 +30,29 @@
         align-items: $y-position;
 }
 
-/*background image des menus*/
+/* boucle background image des menus*/
+/*$selector:(ex:francaise), $img:lien url*/
+$menu:(
+        francaise: '../images/restaurants/Small/a_la_francaise.jpg',
+        note: '../images/restaurants/Small/note_enchantee.jpg',
+        delice: '../images/restaurants/Small/delice_des_sens.jpg',
+        palette: '../images/restaurants/Small/palette_du_gout.jpg'
 
-@mixin bg-image-property{
-        width: 100%;
-        background-color: $light-bg-color;
-        background-repeat:no-repeat;
-        background-attachment:local;
-        background-size:cover;
-        background-position-x: center;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+);
+@mixin bg-image-property ($selector){
+        @each $selector, $img in $menu{
+                &--#{$selector}{
+                        width: 100%;
+                        background-image: url($img);
+                        background-color: $light-bg-color;
+                        background-repeat:no-repeat;
+                        background-attachment:local;
+                        background-size:cover;
+                        background-position-x: center;
+                        height: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                }
+        }
 }

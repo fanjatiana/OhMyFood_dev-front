@@ -564,9 +564,10 @@ body {
 /******************************MAIN*****************************/
 /*header*/
 /*background-image*/
-.banner_menu {
+.banner_menu--francaise {
   width: 100%;
-  background-color: #f6f6f6;
+  background-image: url("../images/restaurants/Small/a_la_francaise.jpg");
+  /*background-color: $light-bg-color;*/
   background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
@@ -582,19 +583,69 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-image: url(../images/restaurants/Small/palette_du_gout.jpg);
 }
 
-.bg--francaise {
-  background-image: url(../images/restaurants/Small/a_la_francaise.jpg);
+.banner_menu--note {
+  width: 100%;
+  background-image: url("../images/restaurants/Small/note_enchantee.jpg");
+  /*background-color: $light-bg-color;*/
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  background-position-x: center;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.bg--delice {
-  background-image: url(../images/restaurants/Small/delice_des_sens.jpg);
+.banner_menu--delice {
+  width: 100%;
+  background-image: url("../images/restaurants/Small/delice_des_sens.jpg");
+  /*background-color: $light-bg-color;*/
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  background-position-x: center;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.bg--note {
-  background-image: url(../images/restaurants/Small/note_enchantee.jpg);
+.banner_menu--palette {
+  width: 100%;
+  background-image: url("../images/restaurants/Small/palette_du_gout.jpg");
+  /*background-color: $light-bg-color;*/
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  background-position-x: center;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .title_banner {

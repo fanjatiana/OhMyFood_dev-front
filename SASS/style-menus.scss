@@ -45,18 +45,7 @@ body{
 /*header*/
 /*background-image*/
 .banner_menu{
-    @include bg-image-property;
-    background-image: url(../images/restaurants/Small/palette_du_gout.jpg);
-    
-}
-.bg--francaise{
-    background-image: url(../images/restaurants/Small/a_la_francaise.jpg);
-}
-.bg--delice{
-    background-image: url(../images/restaurants/Small/delice_des_sens.jpg);
-}
-.bg--note{
-    background-image: url(../images/restaurants/Small/note_enchantee.jpg);
+    @include bg-image-property(francaise);   
 }
 
 .title_banner{

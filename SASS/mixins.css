@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*bouton call-to-action:explorer nos menus et commander*/
 /*propriétés flexbox*/
-/*background image des menus*/
+/* boucle background image des menus*/
+/*$selector:(ex:francaise), $img:lien url*/
 /*# sourceMappingURL=mixins.css.map */
