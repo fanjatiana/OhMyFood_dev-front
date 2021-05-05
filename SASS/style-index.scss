@@ -229,9 +229,8 @@ body{
 .icone_favorite{
     @include block-row (20%,center,center);
     @include animation-heart;
-    i{
+    & i{
         font-size:1.8em;
-        margin-top:0.3em;
         
     }
 }

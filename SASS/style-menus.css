@@ -453,11 +453,13 @@ body {
   color: transparent;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
+  font-size: 1.8em;
 }
 
 .icone_favorite .far {
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
+  font-size: 1.8em;
 }
 
 .icone_favorite:hover .fas {
@@ -474,7 +476,6 @@ body {
 
 .icone_favorite i {
   font-size: 1.8em;
-  margin-top: 0.3em;
 }
 
 /**********************************FOOTER*******************************/
@@ -547,7 +548,7 @@ body {
 }
 
 .banner > nav {
-  width: 90%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,10 +562,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*display: flex;
-        flex-direction: row;
-        margin:auto;
-        width: 90%;*/
+  margin: auto;
 }
 
 .banner > nav a:nth-child(1) {
@@ -725,7 +723,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.3em;
 }
 
 /*liste des plats*/

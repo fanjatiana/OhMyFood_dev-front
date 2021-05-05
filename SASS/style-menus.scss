@@ -19,11 +19,8 @@ body{
     width: 100%;
     background-color: $light-bg-color;
     > nav{
-        @include block-row(90%,space-between,center);
-        /*display: flex;
-        flex-direction: row;
+        @include block-row(95%,space-between,center);
         margin:auto;
-        width: 90%;*/
         & a:nth-child(1){
             @include block-row (25%, flex-start, center);
             text-decoration: none;
@@ -60,7 +57,7 @@ body{
     }
     & i{
         @include block-row (20%, center, center);
-        font-size: 1.3em;
+        
     }
 }
 
