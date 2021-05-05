@@ -2,19 +2,8 @@
 /*fichies importes*/
 /*bouton call-to-action:explorer nos menus et commander*/
 /*propriétés flexbox*/
-/*background image des menus*/
-/*@mixin bg-image-property{()
-        width: 100%;
-        background-color: $light-bg-color;
-        background-repeat:no-repeat;
-        background-attachment:local;
-        background-size:cover;
-        background-position-x: center;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-}*/
+/* boucle background image des menus*/
+/*$selector:(ex:francaise), $img:lien url*/
 /*variables couleur*/
 /*variables taille*/
 /*propriétés générales*/
@@ -440,6 +429,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.icone_favorite .fas {
+  position: absolute;
+  opacity: 0;
+  color: transparent;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.icone_favorite .far {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.icone_favorite:hover .fas {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.icone_favorite:hover .far {
+  opacity: 0;
 }
 
 .icone_favorite i {
