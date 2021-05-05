@@ -15,9 +15,9 @@ body{
 /********************************HEADER***********************************/
 
 /*banniere du site*/
-.banner{
+.nav{
     width: 100%;
-    > .nav{
+    > .banner{
         @include block-column(#FFF);
     }
 }
@@ -41,25 +41,37 @@ body{
         color:$dark-bg-color;
         width: 10%;
         text-align: right;
+        position: absolute;
+        left:  17%;
+        padding-top: 1em;
+    }
+    label{
+        width: 100%;
     }
     input{
-        max-width: min-content;
         background-color: transparent;
+        width: 100%;
         border:none;
         color:$dark-bg-color;
-        width: 90%;
-        margin-left:1em;   
+        position: relative; 
+        left:0;
+        height: 2.7em;
+        text-align: center;
         &::placeholder{
-            text-align: left;
+            text-align: center;
             font-size: 0.9em;
             color:$dark-bg-color;
-            font-weight: bold;   
+            font-weight: bold;
+            
         }
         &:focus{
             outline-style: none;
-        }
+            background-color: #FFF;
+            z-index: 2;
+        }       
     }
 }
+
 
 /*block presentation*/
 .introduction{

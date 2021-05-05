@@ -11,8 +11,8 @@
     </head>
     <body>
         <header>
-            <div class="banner">
-                <nav class="nav">
+            <nav class="nav">
+                <div class="banner">
                     <div class="logo">
                         <a href="index.html">
                             <h1>
@@ -20,21 +20,25 @@
                             </h1>
                         </a>
                     </div>
+                </div>
+                <form>
                     <div class="search-bar">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <input type="search" id="city-search" name="city-search" aria-label="cherchez un restaurant gastronomique dans la ville de votre choix" placeholder="Paris, Belleville"/>
+                        <label for="city-search">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="search" id="city-search" name="city-search" aria-label="cherchez un restaurant gastronomique dans la ville de votre choix" placeholder="Paris, Belleville" required/>
+                        </label> 
                     </div>      
-                </nav>
-            </div>
-            <div class="introduction">
-                <div class="intro_text">
-                    <h2>Réservez le menu qui vous convient</h2>
-                    <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
-                </div>
-                <div class="btn_explore">
-                   <button class="call-to-action">Explorez nos restaurants</button>
-                </div>
-            </div>
+                    <div class="introduction">
+                        <div class="intro_text">
+                            <h2>Réservez le menu qui vous convient</h2>
+                            <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
+                        </div>
+                        <div class="btn_explore">
+                            <button class="call-to-action" type="submit">Explorez nos restaurants</button>
+                        </div>
+                    </div>
+                </form>
+            </nav>
         </header>
         <main>
             <aside class="block_operation">
