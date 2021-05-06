@@ -12,7 +12,7 @@
 }
 
 body {
-  max-width: 599px;
+  max-width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
@@ -447,11 +447,13 @@ body {
   color: transparent;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
+  font-size: 1.8em;
 }
 
 .icone_favorite .far {
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
+  font-size: 1.8em;
 }
 
 .icone_favorite:hover .fas {

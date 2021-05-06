@@ -1,0 +1,84 @@
+@media screen and (min-width: 480px) {
+  body h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .logo img {
+    width: 15em;
+  }
+  .search-bar .fa-map-marker-alt {
+    left: 25%;
+  }
+  .block_list ol > li {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 567px) {
+  .introduction > .intro_text {
+    width: 80%;
+  }
+  .introduction > .intro_text > h2 {
+    width: 80%;
+  }
+  .block_list {
+    max-width: 567px;
+  }
+  .block_list ol > li {
+    width: 60%;
+  }
+  .restaurant_list article {
+    width: 80%;
+  }
+  .container > h4 {
+    text-align: center;
+  }
+  .container .info_omyfood {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 730px) {
+  .search-bar .fa-map-marker-alt {
+    left: 30%;
+  }
+  .block_list {
+    width: 100%;
+    max-width: none;
+  }
+  .block_list > ol {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .block_list > ol > li {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .restaurant_list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurant_list article {
+    width: 45%;
+    margin: 0.8em;
+  }
+}
+/*# sourceMappingURL=media_queries.css.map */
