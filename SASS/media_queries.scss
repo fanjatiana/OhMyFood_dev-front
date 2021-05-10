@@ -92,3 +92,107 @@
         
     }
 }
+
+@media screen and (min-width:1280px){
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        > .banner{
+            width: 70%;
+            justify-content: center;
+            background-color: #353535;
+            & img{
+                filter: invert(100%);
+                width: 20em;
+            }
+        }
+        & .part-search{
+            width: 30%;
+        }
+    }
+
+    .part-search{
+        > form{
+            display: flex;
+            flex-direction: column-reverse;
+            > .search-bar{
+                background: violet;
+                & .fa-map-marker-alt{
+                    left: 70%;
+                }   
+            }    
+            & .introduction {
+                color:#FFF;
+                background-color: #353535;
+                > .intro_text{
+                    width: 100%;
+                    font-size: 1.1em;
+                    background: transparent;
+                    > h2 + p{
+                        width: 100%;
+                    }
+                }
+                & .btn_explore{
+                    width: 100%;
+                }
+            }
+        }
+            
+    }    
+   
+    .block_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        > .block_operation{
+            width: 25%;
+            height: 380px;
+            position: sticky;
+            top:250px;
+            right: 50px;
+            padding-top: 1em;
+            margin-left: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 10px #B991EA;
+            background: linear-gradient(to right,#FF79DA, #9356DC);
+            > .title h3 {
+                margin: 0em auto;
+                color: #FFF;
+            }
+            & .block_list{
+                ol{
+                    flex-direction: column;
+                    > li{
+                        width: 80%;
+                        margin-bottom:1em;
+                        margin-top: 1em;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    
+   
+
+    .block_restaurant{
+        background: #FFF;
+        width: 70%;
+        & .restaurant_list{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            background: #FFF;
+            > .title{
+                width: 100%;
+            }
+            & article{
+                width: 70%;
+            }
+        }
+    }
+    
+    
+}
