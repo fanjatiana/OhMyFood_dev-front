@@ -551,7 +551,7 @@ body {
 }
 
 body {
-  max-width: 599px;
+  width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
@@ -616,6 +616,10 @@ body {
 /******************************MAIN*****************************/
 /*header*/
 /*background-image*/
+.banner_menu {
+  height: 300px;
+}
+
 .banner_menu--francaise {
   width: 100%;
   background-image: url("../images/restaurants/Small/a_la_francaise.jpg");
@@ -624,7 +628,6 @@ body {
   background-attachment: local;
   background-size: cover;
   background-position-x: center;
-  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,7 +648,6 @@ body {
   background-attachment: local;
   background-size: cover;
   background-position-x: center;
-  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -666,7 +668,6 @@ body {
   background-attachment: local;
   background-size: cover;
   background-position-x: center;
-  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,7 +688,6 @@ body {
   background-attachment: local;
   background-size: cover;
   background-position-x: center;
-  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

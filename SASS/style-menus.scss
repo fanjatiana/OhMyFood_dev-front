@@ -7,7 +7,7 @@
     font-size: 1rem;
 }
 body{
-    max-width: 599px;
+    width: 100%;
     height: auto;
     margin:0;
     padding:0;
@@ -42,7 +42,8 @@ body{
 /*header*/
 /*background-image*/
 .banner_menu{
-    @include bg-image-property(francaise);   
+    @include bg-image-property(francaise);
+    height: 300px;   
 }
 
 .title_banner{

@@ -50,13 +50,13 @@ $menu:(
                         background-attachment:local;
                         background-size:cover;
                         background-position-x: center;
-                        height: 300px;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-end;
                 }
         }
 }
+
 
 @mixin animation-heart{
         .fas{

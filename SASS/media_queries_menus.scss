@@ -1,6 +1,142 @@
 @import "mixins.scss";
 @import "variables.scss";
+@import "style-menus.scss";
 
 @media screen and (min-width: 601px){
+    .banner_menu{
+        height: 400px;
+        margin-bottom: 50px;
+        
+        > .title_banner{
+            flex-direction: column;
+            > h2{
+                text-align: center;
+            }
+        }
+    }
+
+    .container_menu{
+       & h3{
+           text-align: center;
+       }
+    }
+
+    article{
+        width: 90%;
+        margin:1em auto;
+        & .title_menu{
+            h4{
+                font-size: 1em;
+            }
+            p{
+                font-size: 0.9em;
+            }
+        }
+        & .price{
+            p{
+                font-size: 1em;
+            }
+        }
+    }
+
+     /*footer*/
+     .container{
+        > h4{
+            text-align: center;
+        }
+        & .info_omyfood{
+            text-align: center;
+        }
+    }
 
 }
+
+@media screen and (min-width: 834px){
+    .banner_menu{
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .banner_menu{
+        background-image: none;
+        height: auto;
+        margin-bottom: 50px;
+        & .icone_favorite{
+            margin-bottom: 50px;
+        }
+       
+    }
+
+    main{
+        background-image: url(../images/restaurants/Small/palette_du_gout.jpg);
+        background-color: $light-bg-color;
+        background-repeat:no-repeat;
+        background-size:cover;
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        & footer{
+            width: 30%;
+            margin:auto;
+            position: sticky;
+            bottom: 0;
+        }
+    }
+
+    .container_menu{
+        width: 60%;
+        margin-bottom: 3em;
+        height: 400px;
+        overflow: scroll;
+        margin: auto;
+        background: gray;
+        border-radius: 15px;
+        background: rgba( 126, 126, 126, 0.80 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        & h3{
+            width: 20%;
+            margin: 1.2em auto;
+            background: #008766;
+            color: #99e2d0;
+        }
+        
+    }
+
+    article{
+        width: 80%;
+        margin: 1em auto;
+    }
+
+    
+    
+    .btn_order{
+        margin-bottom: 0;
+        padding-top:50px;
+        padding-bottom:50px;
+        
+    }
+    /*footer*/
+    .container{
+        >h4{
+            img{
+                width: 20%;
+            }
+        }
+    }
+    .info_omyfood{
+        @include block-row(100%,space-around,initial);
+        margin-top:30px;
+        > li{
+            width: 20%;
+            &  a{
+                @include block-row(100%,space-around,initial)
+            }
+        }
+    }    
+}
+
