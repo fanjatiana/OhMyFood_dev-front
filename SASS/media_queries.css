@@ -62,6 +62,9 @@
 }
 
 @media screen and (min-width: 840px) {
+  body {
+    height: 100%;
+  }
   .restaurant_list {
     width: 100%;
     display: -webkit-box;
@@ -94,7 +97,7 @@
             flex-direction: row;
   }
   .nav > .banner {
-    width: 70%;
+    width: 40%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -106,7 +109,7 @@
     width: 20em;
   }
   .nav .part-search {
-    width: 30%;
+    width: 60%;
   }
   .part-search > form {
     display: -webkit-box;
@@ -121,7 +124,7 @@
     background: violet;
   }
   .part-search > form > .search-bar .fa-map-marker-alt {
-    left: 70%;
+    left: 55%;
   }
   .part-search > form .introduction {
     color: #FFF;
@@ -151,7 +154,7 @@
             justify-content: space-between;
   }
   .block_content > .block_operation {
-    width: 25%;
+    width: 20%;
     height: 380px;
     position: -webkit-sticky;
     position: sticky;
@@ -184,6 +187,12 @@
     background: #FFF;
     width: 70%;
   }
+  .block_restaurant > .title {
+    width: 100%;
+  }
+  .block_restaurant > .title h3 {
+    font-size: 1.5em;
+  }
   .block_restaurant .restaurant_list {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -195,11 +204,37 @@
             align-items: center;
     background: #FFF;
   }
-  .block_restaurant .restaurant_list > .title {
-    width: 100%;
-  }
   .block_restaurant .restaurant_list article {
     width: 70%;
+  }
+  .container > h4 img {
+    width: 20%;
+  }
+  .container .info_omyfood {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .container .info_omyfood > li {
+    width: 20%;
+  }
+  .container .info_omyfood > li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=media_queries.css.map */
