@@ -131,8 +131,10 @@ body {
 
 .search-bar input:focus {
   outline-style: none;
-  background-color: #FFF;
-  z-index: 2;
+}
+
+.search-bar input:focus + i {
+  display: none;
 }
 
 /*block presentation*/
@@ -374,6 +376,11 @@ body {
   -webkit-box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
           box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
   margin: 1em;
+}
+
+.restaurant_list .new::after {
+  content: "nouveauté";
+  color: green;
 }
 
 /*cartes cliquables*/
