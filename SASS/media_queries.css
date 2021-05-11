@@ -1,3 +1,4 @@
+/**********************media queries mobile************************/
 @media screen and (min-width: 480px) {
   body h3 {
     text-align: center;
@@ -5,33 +6,40 @@
 }
 
 @media screen and (min-width: 481px) {
+  /*banniere*/
   .logo img {
     width: 15em;
   }
+  /*barre de recherche*/
   .search-bar .fa-map-marker-alt {
     left: 25%;
   }
+  /*bloc fonctionnement*/
   .block_list ol > li {
     width: 70%;
   }
 }
 
 @media screen and (min-width: 567px) {
+  /*presentation du site:header*/
   .introduction > .intro_text {
     width: 80%;
   }
   .introduction > .intro_text > h2 {
     width: 80%;
   }
+  /*bloc fonctionnement*/
   .block_list {
     max-width: 567px;
   }
   .block_list ol > li {
     width: 60%;
   }
+  /*bloc restaurants*/
   .restaurant_list article {
     width: 80%;
   }
+  /*footer*/
   .container > h4 {
     text-align: center;
   }
@@ -40,10 +48,13 @@
   }
 }
 
+/**********************media queries tablette************************/
 @media screen and (min-width: 730px) {
+  /*barre de recherche*/
   .search-bar .fa-map-marker-alt {
     left: 30%;
   }
+  /*bloc fontionnement*/
   .block_list {
     width: 100%;
     max-width: none;
@@ -65,6 +76,7 @@
   body {
     height: 100%;
   }
+  /*liste restaurants*/
   .restaurant_list {
     width: 100%;
     display: -webkit-box;
@@ -85,7 +97,9 @@
   }
 }
 
+/**********************media queries desktop***********************/
 @media screen and (min-width: 1280px) {
+  /*banniere*/
   .nav {
     width: 100%;
     display: -webkit-box;
@@ -108,7 +122,8 @@
             filter: invert(100%);
     width: 20em;
   }
-  .nav .part-search {
+  /*partie recherche*/
+  .part-search {
     width: 60%;
   }
   .part-search > form {
@@ -126,6 +141,7 @@
   .part-search > form > .search-bar .fa-map-marker-alt {
     left: 55%;
   }
+  /*presentation du site*/
   .introduction {
     color: #FFF;
     background-color: #353535;
@@ -141,6 +157,7 @@
   .introduction .btn_explore {
     width: 100%;
   }
+  /*bloc main*/
   .block_content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -153,7 +170,8 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .block_content > .block_operation {
+  /*bloc fonctionnement*/
+  .block_operation {
     width: 20%;
     height: 380px;
     position: -webkit-sticky;
@@ -168,21 +186,22 @@
     background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
     background: linear-gradient(to right, #FF79DA, #9356DC);
   }
-  .block_content > .block_operation > .title h3 {
+  .block_operation > .title h3 {
     margin: 0em auto;
     color: #FFF;
   }
-  .block_content > .block_operation .block_list ol {
+  .block_operation .block_list ol {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .block_content > .block_operation .block_list ol > li {
+  .block_operation .block_list ol > li {
     width: 80%;
     margin-bottom: 1em;
     margin-top: 1em;
   }
+  /*bloc restaurants*/
   .block_restaurant {
     background: #FFF;
     width: 70%;
@@ -208,6 +227,7 @@
     width: 70%;
     margin-bottom: 2em;
   }
+  /*footer*/
   .container > h4 img {
     width: 20%;
   }
@@ -240,7 +260,9 @@
   }
 }
 
+/**********************media queries grand ecran************************/
 @media screen and (min-width: 1920px) {
+  /*bloc restaurants*/
   .restaurant_list > article {
     width: 60%;
     height: 600px;
@@ -249,15 +271,18 @@
     width: 100%;
     height: 100%;
   }
+  /*image des articles*/
   .part_img {
     height: 500px;
   }
   .part_img img {
     height: 500px;
   }
+  /*texte des articles*/
   .introduction .intro_text {
     font-size: 1.3em;
   }
+  /*footer*/
   .info_omyfood a {
     font-size: 1.3em;
   }
@@ -266,6 +291,10 @@
 @media screen and (min-width: 2000px) {
   body {
     max-width: 100%;
+  }
+  /*banniere*/
+  .nav {
+    /*presentation du site*/
   }
   .nav > .banner img {
     width: 30em;

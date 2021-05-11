@@ -1,3 +1,5 @@
+
+/**********************media queries mobile************************/
 @media screen and (min-width:480px) {
     body{
         & h3{
@@ -7,17 +9,19 @@
 }
 
 @media screen and (min-width:481px){
+    /*banniere*/
     .logo {
         img{
             width: 15em;
         }
     }
-
+    /*barre de recherche*/
     .search-bar {
         & .fa-map-marker-alt{
             left:25%;
         }
     }
+    /*bloc fonctionnement*/
     .block_list{
         ol > li{
             width: 70%;
@@ -26,6 +30,7 @@
 }
 
 @media screen and (min-width:567px){
+    /*presentation du site:header*/
     .introduction{
         > .intro_text{
             width: 80%;
@@ -34,20 +39,20 @@
             }
         }
     }
-    
+    /*bloc fonctionnement*/
     .block_list{
         max-width: 567px;
         ol > li{
-            width: 60%;
-            
+            width: 60%;  
         }
     }
+    /*bloc restaurants*/
     .restaurant_list{
         & article{
             width: 80%;
-        }
-        
+        }  
     }
+    /*footer*/
     .container{
         > h4{
             text-align: center;
@@ -57,14 +62,15 @@
         }
     }
 }
-
+/**********************media queries tablette************************/
 @media screen and (min-width:730px) {
+    /*barre de recherche*/
     .search-bar {
         & .fa-map-marker-alt{
             left:30%;
         }
     }
-
+    /*bloc fontionnement*/
     .block_list{
         width: 100%;
         max-width: none;
@@ -82,8 +88,7 @@
     body{
         height: 100%;
     }
-    
-    
+    /*liste restaurants*/
     .restaurant_list{
         width: 100%;
         display: flex;
@@ -93,12 +98,12 @@
         & article {
             width: 45%;
             margin:0.8em;
-        }   
-        
+        }      
     }
 }
-
+/**********************media queries desktop***********************/
 @media screen and (min-width:1280px){
+    /*banniere*/
     .nav {
         width: 100%;
         display: flex;
@@ -112,12 +117,10 @@
                 width: 20em;
             }
         }
-        & .part-search{
-            width: 60%;
-        }
     }
-
+    /*partie recherche*/
     .part-search{
+        width: 60%;
         > form{
             display: flex;
             flex-direction: column-reverse;
@@ -128,7 +131,8 @@
                 }   
             }
         }
-    }    
+    } 
+    /*presentation du site*/   
     .introduction {
         color:#FFF;
         background-color: #353535;
@@ -144,40 +148,40 @@
             width: 100%;
         }
     }
-    
+    /*bloc main*/
     .block_content{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        > .block_operation{
-            width: 20%;
-            height: 380px;
-            position: sticky;
-            top:250px;
-            right: 50px;
-            padding-top: 1em;
-            margin-left: 30px;
-            border-radius: 15px;
-            box-shadow: 0px 0px 20px 10px #B991EA;
-            background: linear-gradient(to right,#FF79DA, #9356DC);
-            > .title h3 {
-                margin: 0em auto;
-                color: #FFF;
-            }
-            & .block_list{
-                ol{
-                    flex-direction: column;
-                    > li{
-                        width: 80%;
-                        margin-bottom:1em;
-                        margin-top: 1em;
-                    }
+    }
+     /*bloc fonctionnement*/   
+    .block_operation{
+        width: 20%;
+        height: 380px;
+        position: sticky;
+        top:250px;
+        right: 50px;
+        padding-top: 1em;
+        margin-left: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px 10px #B991EA;
+        background: linear-gradient(to right,#FF79DA, #9356DC);
+        > .title h3 {
+            margin: 0em auto;
+            color: #FFF;
+        }
+        & .block_list{
+            ol{
+                flex-direction: column;
+                > li{
+                    width: 80%;
+                    margin-bottom:1em;
+                    margin-top: 1em;
                 }
             }
         }
-        
     }
-
+    /*bloc restaurants*/
     .block_restaurant{
         background: #FFF;
         width: 70%;
@@ -198,7 +202,7 @@
             }
         }
     }
-
+    /*footer*/
     .container{
         >h4{
             img{
@@ -222,7 +226,9 @@
         }
     }    
 }
+/**********************media queries grand ecran************************/
 @media screen and (min-width:1920px){
+    /*bloc restaurants*/
     .restaurant_list{
         > article{
             width: 60%;
@@ -233,39 +239,39 @@
             }
         }
     }
-
+    /*image des articles*/
     .part_img{
         height: 500px;
         & img{
             height: 500px;
         }   
     }
+    /*texte des articles*/
     .introduction{
         & .intro_text{
             font-size: 1.3em;
-        }
-        
+        }     
     }
-    
-
+    /*footer*/
     .info_omyfood{
         & a{
             font-size: 1.3em;
         }
     }
 }
+
 @media screen and (min-width:2000px){
    body{
     max-width: 100%;
-   
    }
-
+   /*banniere*/
    .nav{
     > .banner{
         & img{
             width: 30em;
             }
         }
+    /*presentation du site*/
     .part-search{
         & .intro_text{
                 font-size: 1.5em;
