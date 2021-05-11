@@ -5,6 +5,7 @@
 /*$selector:(ex:francaise), $img:lien url*/
 /*variables couleur*/
 /*variables taille*/
+/*variable étiquette nouveauté*/
 /*fichies importes*/
 /*bouton call-to-action:explorer nos menus et commander*/
 /*propriétés flexbox*/
@@ -12,6 +13,7 @@
 /*$selector:(ex:francaise), $img:lien url*/
 /*variables couleur*/
 /*variables taille*/
+/*variable étiquette nouveauté*/
 /*propriétés générales*/
 * {
   font-size: 1rem;
@@ -376,11 +378,19 @@ body {
   -webkit-box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
           box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
   margin: 1em;
+  position: relative;
 }
 
 .restaurant_list .new::after {
-  content: "nouveauté";
-  color: green;
+  content: "Nouveau";
+  color: #008766;
+  font-weight: bold;
+  border-radius: 2px;
+  background: #99e2d0;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  padding: 0.5em;
 }
 
 /*cartes cliquables*/

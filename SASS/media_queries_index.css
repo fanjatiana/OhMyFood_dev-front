@@ -5,6 +5,7 @@
 /*$selector:(ex:francaise), $img:lien url*/
 /*variables couleur*/
 /*variables taille*/
+/*variable étiquette nouveauté*/
 /**********************media queries mobile************************/
 @media screen and (min-width: 480px) {
   body h3 {
