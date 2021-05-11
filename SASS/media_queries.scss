@@ -126,26 +126,25 @@
                 & .fa-map-marker-alt{
                     left: 55%;
                 }   
-            }    
-            & .introduction {
-                color:#FFF;
-                background-color: #353535;
-                > .intro_text{
-                    width: 100%;
-                    font-size: 1.1em;
-                    background: transparent;
-                    > h2 + p{
-                        width: 100%;
-                    }
-                }
-                & .btn_explore{
-                    width: 100%;
-                }
             }
         }
-            
     }    
-
+    .introduction {
+        color:#FFF;
+        background-color: #353535;
+        > .intro_text{
+            width: 100%;
+            font-size: 1.1em;
+            background: transparent;
+            > h2 + p{
+                width: 100%;
+            }
+        }
+        & .btn_explore{
+            width: 100%;
+        }
+    }
+    
     .block_content{
         display: flex;
         flex-direction: row;
@@ -195,6 +194,7 @@
             background: #FFF;
             & article{
                 width: 70%;
+                margin-bottom: 2em;
             }
         }
     }
@@ -205,22 +205,71 @@
                 width: 20%;
             }
         }
-        .info_omyfood{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            width: 100%;
-            > li{
-                width: 20%;
-                &  a{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                }
+    }
+    .info_omyfood{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top:30px;
+        > li{
+            width: 20%;
+            &  a{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
             }
-        } 
+        }
+    }    
+}
+@media screen and (min-width:1920px){
+    .restaurant_list{
+        > article{
+            width: 60%;
+            height: 600px;
+            & .card{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .part_img{
+        height: 500px;
+        & img{
+            height: 500px;
+        }   
+    }
+    .introduction{
+        & .intro_text{
+            font-size: 1.3em;
+        }
+        
     }
     
-    
-    
+
+    .info_omyfood{
+        & a{
+            font-size: 1.3em;
+        }
+    }
+}
+@media screen and (min-width:2000px){
+   body{
+    max-width: 100%;
+   
+   }
+
+   .nav{
+    > .banner{
+        & img{
+            width: 30em;
+            }
+        }
+    .part-search{
+        & .intro_text{
+                font-size: 1.5em;
+            }
+        }
+   }
 }
