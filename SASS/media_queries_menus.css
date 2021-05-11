@@ -955,12 +955,6 @@ article .price > p {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
-  .container_menu h3 {
-    width: 20%;
-    margin: 1.2em auto;
-    background: #008766;
-    color: #99e2d0;
-  }
   article {
     width: 80%;
     margin: 1em auto;
