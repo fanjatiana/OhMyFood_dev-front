@@ -886,17 +886,17 @@ article .price > p {
   .container_menu h3 {
     text-align: center;
   }
-  article {
+  .block_menu {
     width: 90%;
     margin: 1em auto;
   }
-  article .title_menu h4 {
+  .block_menu .title_menu h4 {
     font-size: 1em;
   }
-  article .title_menu p {
+  .block_menu .title_menu p {
     font-size: 0.9em;
   }
-  article .price p {
+  .block_menu .price p {
     font-size: 1em;
   }
   /*footer*/
@@ -918,12 +918,25 @@ article .price > p {
   .banner_menu {
     background-image: none;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 6em;
   }
   .banner_menu .icone_favorite {
-    margin-bottom: 50px;
+    margin-bottom: 3em;
   }
-  main {
+  .banner nav > a:first-child {
+    width: 5%;
+  }
+  .banner nav > a:first-child .fa-arrow-left {
+    font-size: 2em;
+  }
+  .banner nav a:last-child {
+    width: 95%;
+    text-align: center;
+  }
+  .banner nav a:last-child img {
+    width: 40%;
+  }
+  .container_restaurant {
     background-image: url(../images/restaurants/Small/palette_du_gout.jpg);
     background-color: #f6f6f6;
     background-repeat: no-repeat;
@@ -932,7 +945,7 @@ article .price > p {
     margin: auto;
     height: 100%;
   }
-  main footer {
+  .container_restaurant footer {
     width: 30%;
     margin: auto;
     position: -webkit-sticky;
@@ -955,7 +968,17 @@ article .price > p {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
-  article {
+  .container_menu .menu_liste h3 {
+    width: 50%;
+    margin-bottom: 1.2em;
+    border-bottom: 3px #99e2d0 solid;
+    border-top: 3px #99e2d0 solid;
+    margin: auto;
+  }
+  .container_menu .menu_liste h3 span {
+    border-bottom: none;
+  }
+  .block_menu {
     width: 80%;
     margin: 1em auto;
   }

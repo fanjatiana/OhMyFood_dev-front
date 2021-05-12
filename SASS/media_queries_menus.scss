@@ -21,7 +21,7 @@
        }
     }
 
-    article{
+    .block_menu{
         width: 90%;
         margin:1em auto;
         & .title_menu{
@@ -61,14 +61,33 @@
     .banner_menu{
         background-image: none;
         height: auto;
-        margin-bottom: 50px;
+        margin-bottom: 6em;
         & .icone_favorite{
-            margin-bottom: 50px;
+            margin-bottom: 3em;
         }
        
     }
 
-    main{
+    .banner{
+        nav{
+            > a:first-child{
+                width: 5%;
+                & .fa-arrow-left{
+                    font-size: 2em;
+                }
+            }
+            & a:last-child{
+            width: 95%;
+            text-align: center;
+            & img{
+                width: 40%;
+               
+            }
+            }
+        }
+    }
+
+    .container_restaurant{
         background-image: url(../images/restaurants/Small/palette_du_gout.jpg);
         background-color: $light-bg-color;
         background-repeat:no-repeat;
@@ -97,11 +116,22 @@
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
         border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 )    
-        
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        & .menu_liste{
+            & h3{
+                width: 50%;
+                margin-bottom: 1.2em;
+                border-bottom: 3px #99e2d0 solid;
+                border-top: 3px #99e2d0 solid;
+                margin: auto;
+                & span{
+                    border-bottom: none;
+                }
+            }
+        }  
     }
-
-    article{
+     
+    .block_menu{
         width: 80%;
         margin: 1em auto;
     }
