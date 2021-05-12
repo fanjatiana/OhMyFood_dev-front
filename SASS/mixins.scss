@@ -53,6 +53,29 @@ $menu:(
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-end;
+                       
+                }
+        }
+}
+
+/*Boucle background image menus version desktop*/
+$desktop-menu:(
+        francaise: '../images/restaurants/Big/a_la_francaise.jpg',
+        note: '../images/restaurants/Big/note_enchantee.jpg',
+        delice: '../images/restaurants/Big/delice_des_sens.jpg',
+        palette: '../images/restaurants/Big/palette_du_gout.jpg'
+
+);
+@mixin bg-Big-image-property ($selector) {
+        @each $selector, $img in $desktop-menu{
+                &--#{$selector}{
+                        background-image: url($img);
+                        background-color: $light-bg-color;
+                        background-repeat:no-repeat;
+                        background-size:cover;
+                        width: 100%;
+                        margin: auto;
+                        height: 100%;
                 }
         }
 }

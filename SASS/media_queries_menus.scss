@@ -88,13 +88,14 @@
     }
 
     .container_restaurant{
-        background-image: url(../images/restaurants/Small/palette_du_gout.jpg);
+        /*background-image: url(../images/restaurants/Big/palette_du_gout.jpg);
         background-color: $light-bg-color;
         background-repeat:no-repeat;
         background-size:cover;
         width: 100%;
         margin: auto;
-        height: 100%;
+        height: 100%;*/
+        @include bg-Big-image-property (francaise);
         & footer{
             width: 30%;
             margin:auto;
