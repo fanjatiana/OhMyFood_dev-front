@@ -78,7 +78,7 @@ body{
 .introduction{
     @include block-column;
     padding-bottom:3em; 
-    > .intro_text{
+    > .intro-text{
         @include block-column();
         margin-top: 1rem;
         text-align: center;
@@ -95,7 +95,7 @@ body{
 }
 
 /*bouton explorez nos restaurants*/
-.btn_explore{
+.btn-explore{
     @include block-row(60%,center,center);
     margin-top:10px;
     .call-to-action{
@@ -114,7 +114,7 @@ body{
 
 /*block fonctionnement du site*/
 /*titre de la partie fonctionnement du site*/
-.block_operation{
+.block-operation{
     @include block-column(#FFF);
     padding-top: 2em;
     > .title{
@@ -128,7 +128,7 @@ body{
 }
 
 /*liste d' étapes à suivre pour commander*/
-.block_list{
+.block-list{
     width: 100%; 
     & ol{
         list-style-type: none;
@@ -168,7 +168,7 @@ body{
 }
 /*partie liste des restaurants*/
 /*block restaurant*/
-.block_restaurant{
+.block-restaurant{
     background-color: $light-bg-color;
     width: 100%;
     padding-bottom: 5em;
@@ -183,7 +183,7 @@ body{
     }
 }
 /*block liste des restaurants*/
-.restaurant_list{
+.restaurant-list{
     @include block-column ();
     & article {
         @include block-column ($light-bg-color, 90%);
@@ -226,7 +226,7 @@ body{
     }
 }
 /*titre des cartes*/
-.part_text{
+.part-text{
     @include block-row (95%,space-between, center);
     margin:auto;
     color: black;
@@ -241,9 +241,10 @@ body{
     }
 }
 /*icones coeur*/
-.icone_favorite{
+.icone-favorite{
     @include block-row (20%,center,center);
     @include animation-heart;
+    width: 30px;
     & i{
         font-size:1.8em;
         
@@ -266,7 +267,7 @@ body{
     }
 }
 /*liens vers les infos complémentaires du site omyfood*/
-.info_omyfood{
+.info-omyfood{
     width: 90%;
     padding-left: 0;
     > li{

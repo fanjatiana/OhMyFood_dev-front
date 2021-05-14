@@ -24,7 +24,7 @@
         }
     }
     /*bloc fonctionnement*/
-    .block_list{
+    .block-list{
         ol > li{
             width: 70%;
         }
@@ -34,7 +34,7 @@
 @media screen and (min-width:567px){
     /*presentation du site:header*/
     .introduction{
-        > .intro_text{
+        > .intro-text{
             width: 80%;
             > h2{
                 width: 80%;
@@ -42,14 +42,14 @@
         }
     }
     /*bloc fonctionnement*/
-    .block_list{
+    .block-list{
         max-width: 567px;
         ol > li{
             width: 60%;  
         }
     }
     /*bloc restaurants*/
-    .restaurant_list{
+    .restaurant-list{
         & article{
             width: 80%;
         }  
@@ -59,7 +59,7 @@
         > h4{
             text-align: center;
         }
-        & .info_omyfood{
+        & .info-omyfood{
             text-align: center;
         }
     }
@@ -73,7 +73,7 @@
         }
     }
     /*bloc fontionnement*/
-    .block_list{
+    .block-list{
         width: 100%;
         max-width: none;
         > ol{
@@ -90,7 +90,7 @@
         height: 100%;
     }
     /*liste restaurants*/
-    .restaurant_list{
+    .restaurant-list{
         @include block-row (100%,space-between,initial);
         flex-wrap: wrap;
         & article {
@@ -103,38 +103,35 @@
 @media screen and (min-width:1280px){
     /*banniere*/
     .nav {
+        border-bottom: 1px #eaeaea solid;
+        box-shadow: 1px 1px 5px rgba(126, 125, 125, 0.6);
         width: 100%;
         display: flex;
         flex-direction: row;
         > .banner{
-            width: 40%;
+            width: 30%;
             justify-content: center;
-            background-color:$dark-bg-color;
             & img{
-                filter: invert(100%);
                 width: 20em;
             }
         }
     }
     /*partie recherche*/
     .part-search{
-        width: 60%;
+        width: 70%;
         > form{
             display: flex;
             flex-direction: column-reverse;
             > .search-bar{
-                background: $secondary;
                 & .fa-map-marker-alt{
-                    left: 55%;
+                    left: 50%;
                 }   
             }
         }
     } 
     /*presentation du site*/   
     .introduction {
-        color:#FFF;
-        background-color: $dark-bg-color;
-        > .intro_text{
+        > .intro-text{
             width: 100%;
             font-size: 1.1em;
             background: transparent;
@@ -147,17 +144,20 @@
         }
     }
     /*bloc main*/
-    .block_content{
-        @include block-row (100%,space-between,initial);
+    .block-content{
+        @include block-row (100%,space-around,initial);
+        flex-direction: row-reverse;
+        margin-top: 100px;
+        margin-top: 100px;
     }
      /*bloc fonctionnement*/   
-    .block_operation{
+    .block-operation{
         @include block_floated;
         > .title h3 {
             margin: 0em auto;
             color: #FFF;
         }
-        & .block_list{
+        & .block-list{
             ol{
                 flex-direction: column;
                 align-items: center;
@@ -170,19 +170,24 @@
         }
     }
     /*bloc restaurants*/
-    .block_restaurant{
-        background: #FFF;
+    .block-restaurant{
+        background: #f6f6f6;;
         width: 70%;
+        margin-bottom: 50px;
+        border-radius: 20px;
         > .title{
             width: 100%;
             h3{
                 font-size: 1.5em;
             }
         }
-        & .restaurant_list{
-            @include block-column(#FFF,100%);
+        & .restaurant-list{
+            @include block-row(95%,space-around,initial);
+            background-color: transparent;
+            margin:auto;
+
             & article{
-                width: 70%;
+                width: 40%;
                 margin-bottom: 2em;
             }
         }
@@ -195,13 +200,13 @@
             }
         }
     }
-    .info_omyfood{
+    .info-omyfood{
         @include block-row(100%,space-around,initial);
         margin-top:30px;
         > li{
             width: 20%;
             &  a{
-                @include block-row(100%,space-around,initial)
+                @include block-row(90%,space-around,initial)
             }
         }
     }    
@@ -209,7 +214,7 @@
 /**********************media queries grand ecran************************/
 @media screen and (min-width:1920px){
     /*bloc restaurants*/
-    .restaurant_list{
+    .restaurant-list{
         > article{
             width: 60%;
             height: 400px;
@@ -220,7 +225,7 @@
         }
     }
     /*image des articles*/
-    .part_img{
+    .part-img{
         height: 300px;
         & img{
             height: 300px;
@@ -228,12 +233,12 @@
     }
     /*texte des articles*/
     .introduction{
-        & .intro_text{
+        & .intro-text{
             font-size: 1.3em;
         }     
     }
     /*footer*/
-    .info_omyfood{
+    .info-omyfood{
         & a{
             font-size: 1.3em;
         }
@@ -253,7 +258,7 @@
         }
     /*presentation du site*/
     .part-search{
-        & .intro_text{
+        & .intro-text{
                 font-size: 1.5em;
             }
         }

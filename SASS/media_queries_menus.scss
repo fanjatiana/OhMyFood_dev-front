@@ -3,11 +3,11 @@
 @import "style-menus.scss";
 
 @media screen and (min-width: 601px){
-    .banner_menu{
+    .banner-menu{
         height: 400px;
         margin-bottom: 50px;
         
-        > .title_banner{
+        > .title-banner{
             flex-direction: column;
             > h2{
                 text-align: center;
@@ -15,16 +15,16 @@
         }
     }
 
-    .container_menu{
+    .container-menu{
        & h3{
            text-align: center;
        }
     }
 
-    .block_menu{
+    .block-menu{
         width: 90%;
         margin:1em auto;
-        & .title_menu{
+        & .title-menu{
             h4{
                 font-size: 1em;
             }
@@ -44,7 +44,7 @@
         > h4{
             text-align: center;
         }
-        & .info_omyfood{
+        & .info-omyfood{
             text-align: center;
         }
     }
@@ -52,17 +52,17 @@
 }
 
 @media screen and (min-width: 834px){
-    .banner_menu{
+    .banner-menu{
         height: 500px;
     }
 }
 
 @media screen and (min-width: 1024px){
-    .banner_menu{
+    .banner-menu{
         background-image: none;
         height: auto;
         margin-bottom: 6em;
-        & .icone_favorite{
+        & .icone-favorite{
             margin-bottom: 3em;
         }
        
@@ -87,7 +87,7 @@
         }
     }
 
-    .container_restaurant{
+    .container-restaurant{
         /*background-image: url(../images/restaurants/Big/palette_du_gout.jpg);
         background-color: $light-bg-color;
         background-repeat:no-repeat;
@@ -104,11 +104,9 @@
         }
     }
 
-    .container_menu{
+    .container-menu{
         width: 60%;
         margin-bottom: 3em;
-        height: 400px;
-        overflow: scroll;
         margin: auto;
         background: gray;
         border-radius: 15px;
@@ -118,28 +116,22 @@
         -webkit-backdrop-filter: blur( 4px );
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
-        & .menu_liste{
+        & .menu-liste{
             & h3{
-                width: 50%;
-                margin-bottom: 1.2em;
-                border-bottom: 3px #99e2d0 solid;
-                border-top: 3px #99e2d0 solid;
+                width: 15%;
                 margin: auto;
-                & span{
-                    border-bottom: none;
-                }
             }
         }  
     }
      
-    .block_menu{
+    .block-menu{
         width: 80%;
         margin: 1em auto;
     }
 
     
     
-    .btn_order{
+    .btn-order{
         margin-bottom: 0;
         padding-top:50px;
         padding-bottom:50px;
@@ -153,7 +145,7 @@
             }
         }
     }
-    .info_omyfood{
+    .info-omyfood{
         @include block-row(100%,space-around,initial);
         margin-top:30px;
         > li{

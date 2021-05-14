@@ -42,12 +42,12 @@ body{
 /******************************MAIN*****************************/
 /*header*/
 /*background-image*/
-.banner_menu{
+.banner-menu{
     @include bg-image-property(francaise);
     height: 300px;   
 }
 
-.title_banner{
+.title-banner{
     @include block-row(100%, space-around,center);
     background-color: $light-bg-color;
     border-top-left-radius: 2em;
@@ -57,16 +57,20 @@ body{
         width: 70%;
         font-size: 1.4em;
     }
-    & i{
-        @include block-row (20%, center, center);
-        
+    & .icone-favorite{
+        width: 30px;
+        & i{
+            @include block-row (auto, center, center);
+            
+        }
     }
+   
 }
 
 
 /*liste des plats*/
 /*propriétés générales*/
-.container_menu{
+.container-menu{
     width: 100%;
     margin-bottom: 3em;
     > section{
@@ -88,7 +92,7 @@ article {
     background-color: #FFF;
     border-radius: 1.2em;
     margin-bottom: 1em;
-    & .title_menu{
+    & .title-menu{
         width: 80%;
         > h4{
             margin-bottom: 0;
@@ -108,7 +112,7 @@ article {
     }
 }
 /*FOOTER contenu Main*/
-.btn_order{
+.btn-order{
     @include block-row(100%,center,center);
     margin-bottom: 4em;
     .call-to-action{
