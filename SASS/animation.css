@@ -576,11 +576,18 @@ body {
 }
 
 .sk-circle {
-  margin: 100px auto;
+  margin: 50px auto;
   z-index: 102;
   width: 150px;
   height: 150px;
   position: relative;
+}
+
+.sk-circle::before {
+  content: "chargement...";
+  font-size: 2em;
+  position: absolute;
+  bottom: 200px;
 }
 
 .sk-circle .sk-child {
@@ -745,33 +752,27 @@ body {
 
 @-webkit-keyframes spinner-container {
   0% {
-    opacity: 1;
+    visibility: visible;
   }
   50% {
-    opacity: 0.75;
-  }
-  70% {
-    opacity: 0.5;
+    opacity: 1;
   }
   100% {
+    visibility: hidden;
     opacity: 0;
-    pointer-events: none;
   }
 }
 
 @keyframes spinner-container {
   0% {
-    opacity: 1;
+    visibility: visible;
   }
   50% {
-    opacity: 0.75;
-  }
-  70% {
-    opacity: 0.5;
+    opacity: 1;
   }
   100% {
+    visibility: hidden;
     opacity: 0;
-    pointer-events: none;
   }
 }
 /*# sourceMappingURL=animation.css.map */

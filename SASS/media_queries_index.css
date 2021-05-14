@@ -306,7 +306,7 @@
   /*bloc restaurants*/
   .restaurant_list > article {
     width: 60%;
-    height: 600px;
+    height: 400px;
   }
   .restaurant_list > article .card {
     width: 100%;
@@ -314,10 +314,10 @@
   }
   /*image des articles*/
   .part_img {
-    height: 500px;
+    height: 300px;
   }
   .part_img img {
-    height: 500px;
+    height: 300px;
   }
   /*texte des articles*/
   .introduction .intro_text {

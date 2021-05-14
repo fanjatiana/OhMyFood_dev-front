@@ -17,15 +17,21 @@
     animation-duration: 3s ;
     animation-timing-function: linear;
     /*animation:spinner-container 3s linear ;*/
-    animation-fill-mode:forwards;  
+    animation-fill-mode:forwards;   
 }
 
 .sk-circle {
-    margin: 100px auto;
+    margin: 50px auto;
     z-index: 102;
     width: 150px;
     height: 150px;
-    position: relative; 
+    position: relative;
+    &::before{
+        content: "chargement...";
+        font-size: 2em;
+        position:absolute;
+        bottom:200px;   
+    } 
     & .sk-child {
         width: 100%;
         height: 100%;
@@ -125,18 +131,14 @@
     }
     @keyframes spinner-container{
         0%{
-            opacity: 1;
+            visibility: visible;
         }
         50%{
-            opacity: 0.75;
-        }
-
-        70%{
-            opacity:0.5;
+            opacity: 1;
         }
         100%{
+            visibility: hidden;
             opacity: 0;
-            pointer-events:none;
         }
     }
 }
