@@ -17,7 +17,7 @@
 @media screen and (min-width: 481px) {
   /*banniere*/
   .logo img {
-    width: 15em;
+    width: 25em;
   }
   /*barre de recherche*/
   .search-bar .fa-map-marker-alt {
