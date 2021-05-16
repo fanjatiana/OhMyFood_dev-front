@@ -132,13 +132,10 @@ article {
     &:active  .text-wrap-ellipsis{
         text-overflow: ellipsis;
         max-width: 50%;
+        white-space: nowrap;
+        overflow: hidden;
     } 
-    .title-menu{
-         >  .text-wrap-ellipsis{
-            white-space: nowrap;
-            overflow: hidden;
-        }
-    }
+   
     .price{
         transition-duration:400ms;
         transition-timing-function:both;

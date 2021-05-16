@@ -1623,6 +1623,12 @@ article .price > p {
 .block-menu {
   position: relative;
   cursor: pointer;
+  /*.title-menu{
+         >  .text-wrap-ellipsis{
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }*/
 }
 
 .block-menu:active .rotate {
@@ -1647,9 +1653,6 @@ article .price > p {
 .block-menu:active .text-wrap-ellipsis {
   text-overflow: ellipsis;
   max-width: 50%;
-}
-
-.block-menu .title-menu > .text-wrap-ellipsis {
   white-space: nowrap;
   overflow: hidden;
 }

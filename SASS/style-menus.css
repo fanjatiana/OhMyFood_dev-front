@@ -1639,9 +1639,6 @@ article .price > p {
 .block-menu:active .text-wrap-ellipsis {
   text-overflow: ellipsis;
   max-width: 50%;
-}
-
-.block-menu .title-menu > .text-wrap-ellipsis {
   white-space: nowrap;
   overflow: hidden;
 }
