@@ -1612,6 +1612,120 @@ article .price > p {
   font-size: 0.8em;
 }
 
+.block-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.block-menu:active .rotate {
+  visibility: visible;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.block-menu:active .animation {
+  width: 20%;
+  -webkit-transform: transform;
+          transform: transform;
+  background-color: #99E2D0;
+  visibility: visible;
+}
+
+.block-menu:active .price {
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
+}
+
+.block-menu:active .text-wrap-ellipsis {
+  text-overflow: ellipsis;
+  max-width: 50%;
+}
+
+.block-menu .title-menu > .text-wrap-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.block-menu .price {
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-timing-function: both;
+          transition-timing-function: both;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.block-menu .price > p {
+  margin-top: 40px;
+}
+
+.block-menu .animation {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: width transform background-color;
+  transition-property: width transform background-color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  /*transition: width 400ms, transform 400ms, background-color 400ms ;*/
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.block-menu .rotate {
+  content: "";
+  background-image: url(../images/icone/check-solid.svg);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  border: 2px #000 solid;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0.5px;
+  vertical-align: auto;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  visibility: hidden;
+  -webkit-transform: rotate();
+          transform: rotate();
+}
+
 /*FOOTER contenu Main*/
 .btn-order {
   width: 100%;

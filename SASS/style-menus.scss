@@ -94,7 +94,7 @@ article {
     margin-bottom: 1em;
     & .title-menu{
         width: 80%;
-        > h4{
+        & > h4{
             margin-bottom: 0;
             font-size: 0.9em;
         }
@@ -110,6 +110,90 @@ article {
             font-size: 0.8em;
         } 
     }
+}
+
+.block-menu{
+    position:relative;
+    cursor: pointer;
+    &:active .rotate{
+        visibility: visible;
+        transform: rotate(360deg) ;
+        
+    }
+    &:active .animation{
+        width: 20%;
+        transform: transform;
+        background-color: $tertiary;
+        visibility: visible;              
+        }
+    &:active .price{
+        transform: translateX(-55px);
+    }
+    &:active  .text-wrap-ellipsis{
+        text-overflow: ellipsis;
+        max-width: 50%;
+    } 
+    .title-menu{
+         >  .text-wrap-ellipsis{
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    .price{
+        transition-duration:400ms;
+        transition-timing-function:both;
+        transition-delay: 0s;
+        transition-property: transform;
+        transform: translateX(0);
+        > p{
+                margin-top: 40px;
+        }
+        
+    }
+   
+    
+    .animation{
+        content: "";
+        width: 3px;
+        height: 100%;
+        background-color: $tertiary;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: width transform background-color;
+        transition-duration: 200ms;
+        transition-timing-function:linear;
+        transition-delay: 0s;
+        /*transition: width 400ms, transform 400ms, background-color 400ms ;*/
+        position: absolute;
+        right: 0;
+        top:0;
+        visibility: hidden;
+    }
+
+    .rotate{
+        content: "";
+        background-image: url(../images/icone/check-solid.svg);
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        filter:invert(100%);
+        border:2px #000 solid;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        padding:0.5px;
+        vertical-align:auto;
+        transition-duration:400ms;
+        transition-timing-function:linear;
+        transition-delay: 0s;
+        transition-property: transform;
+        visibility: hidden;
+        transform: rotate();
+    } 
 }
 /*FOOTER contenu Main*/
 .btn-order{

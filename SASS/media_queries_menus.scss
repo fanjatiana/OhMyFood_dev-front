@@ -2,6 +2,15 @@
 @import "variables.scss";
 @import "style-menus.scss";
 
+
+@media screen and (min-width: 469px){
+    .block-menu{
+        &:active .price{
+            transform: translateX(-90px);
+        }
+    }
+}
+
 @media screen and (min-width: 601px){
  
     .banner-menu{
@@ -37,8 +46,18 @@
             p{
                 font-size: 1em;
             }
+        }    
+        &:active .price{
+                transform: translateX(-120px);
+            }
+        .rotate{
+            width: 40px;
+            height: 40px;
         }
+        
     }
+    
+    
 
      /*footer*/
      .container{
@@ -56,6 +75,24 @@
     .banner-menu{
         height: 500px;
     }
+
+    .block-menu{
+       
+        &:active .price{
+            transform: translateX(-150px);
+        }
+        &:active  .text-wrap-ellipsis{
+            text-overflow: ellipsis;
+            max-width: 30%;
+        } 
+        .rotate{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    
+    
+    
 }
 
 @media screen and (min-width: 1024px){
@@ -89,13 +126,6 @@
     }
 
     .container-restaurant{
-        /*background-image: url(../images/restaurants/Big/palette_du_gout.jpg);
-        background-color: $light-bg-color;
-        background-repeat:no-repeat;
-        background-size:cover;
-        width: 100%;
-        margin: auto;
-        height: 100%;*/
         @include bg-Big-image-property (francaise);
         & footer{
             width: 30%;
@@ -124,90 +154,29 @@
             }
         }  
     }
-     
+
     .block-menu{
-        width: 80%;
-        margin: 1em auto;
-        position: relative;
+        position:relative;
         &:hover .rotate{
             visibility: visible;
-            transform: translate(-30px) rotate(360deg) ;
+            transform: rotate(360deg) ;
             
         }
         &:hover .animation{
-            width: 25%;
+            width: 20%;
             transform: transform;
-            background-color: green;
+            background-color:$tertiary;
             visibility: visible;              
             }
         &:hover .price{
-            transform: translate(-120px,0%);
+            transform: translateX(-100px);
         }
-        &:hover  .text-wrap-ellipsis{
+        &:hover .text-wrap-ellipsis{
             text-overflow: ellipsis;
             max-width: 50%;
-        }
-        
+        } 
     }
-
-    &.title-menu{
-        >  .text-wrap-ellipsis{
-            white-space: nowrap;
-            overflow: hidden;
-        }
-        & .price{
-            width: 50px;
-            transition-duration:400ms;
-            transition-timing-function:step-end;
-            transition-delay: 0.2s;
-            transition-property: transform;
-            transform: translate();
-        }
-    }
-   
-    
-    .animation{
-        content: "";
-        width: 3px;
-        height: 100%;
-        background-color: rgb(0, 0, 0);
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        transition-property: width transform background-color;
-        transition-duration: 400ms;
-        transition-timing-function:linear;
-        transition-delay: 0s;
-        /*transition: width 400ms, transform 400ms, background-color 400ms ;*/
-        position: absolute;
-        right: 0;
-        top:0;
-        /*visibility: hidden;*/  
-    }
-
-    .rotate{
-        content: "";
-        background-image: url(../images/icone/check-solid.svg);
-        background-size: 30%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: transparent;
-        border:1px white solid;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        padding:0.5px;
-       position: absolute;
-        bottom:0;
-        right:0;
-        top:20px;
-        transition-duration:400ms;
-        transition-timing-function:linear;
-        transition-delay: 0s;
-        transition-property: transform;
-        visibility: hidden;
-        transform: translateX();
-    } 
-    
+     
     .btn-order{
         margin-bottom: 0;
         padding-top:50px;
@@ -223,7 +192,7 @@
         }
     }
     .info-omyfood{
-        @include block-row(100%,space-around,initial);
+        @include block-row(90%,space-around,initial);
         margin-top:30px;
         > li{
             width: 20%;
@@ -233,42 +202,44 @@
         }
     }    
 }
-@media screen and (min-width: 1250px){
+@media screen and (min-width: 1235px){
 
     .block-menu{
-        &:hover .rotate{
-            visibility: visible;
-            transform: translate(-60px) rotate(360deg) ;
-            
-        }
         &:hover .price{
-            transform: translate(-160px,0%);
+            transform: translateX(-140px);
         }
         
     }
 }
 
-@media screen and (min-width: 1500px){
 
-    .block-menu{
-        &:hover  .text-wrap-ellipsis{
-            text-overflow: ellipsis;
-            max-width: 40%;
-        }
-        
-    }
-}
-
-@media screen and (min-width: 1740px){
+@media screen and (min-width: 1640px){
     .block-menu{
     
         &:hover .price{
-            transform: translate(-210px,0%);
+            transform: translateX(-180px);
         }
       
         
     }
+
+    .info-omyfood{
+        &  a{
+            font-size: 1.2em;
+        }
+    }
 }
+
+
+
+@media screen and (min-width: 2090px){
+    .block-menu{
+        &:hover .price{
+            transform: translateX(-230px);
+        }
+    }
+}
+
 @media screen and (min-width: 2901px){
     main{
         max-width: 2200px;
