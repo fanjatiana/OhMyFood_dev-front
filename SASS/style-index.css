@@ -20,6 +20,10 @@ body {
   padding: 0;
 }
 
+p, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
 /********************************HEADER***********************************/
 /*banniere du site*/
 .nav {
@@ -491,6 +495,7 @@ body {
 
 .icone-favorite i {
   font-size: 1.8em;
+  margin-right: 1em;
 }
 
 /**********************************FOOTER*******************************/

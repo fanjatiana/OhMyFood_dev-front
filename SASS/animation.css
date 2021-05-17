@@ -28,6 +28,10 @@ body {
   padding: 0;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
 /********************************HEADER***********************************/
 /*banniere du site*/
 .nav {

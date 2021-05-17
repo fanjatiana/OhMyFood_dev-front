@@ -250,8 +250,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: initial;
         -ms-flex-align: initial;
             align-items: initial;
@@ -260,7 +261,7 @@
   }
   .block-restaurant .restaurant-list article {
     width: 40%;
-    margin-bottom: 2em;
+    margin: 0 2em 2em 2em;
   }
   /*footer*/
   .container > h4 img {

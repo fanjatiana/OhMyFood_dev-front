@@ -15,6 +15,14 @@ body{
     background-color: $light-bg-color;
 }
 
+h2{
+    font-family: 'Shrikhand', cursive;
+}
+h4 , h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+
 /***************************HEADER*******************************/
 .banner{
     width: 100%;
@@ -97,6 +105,7 @@ article {
         & > h4{
             margin-bottom: 0;
             font-size: 0.9em;
+            
         }
         & p{
             margin-top: 0.2em;
@@ -105,7 +114,6 @@ article {
     }
     & .price{
         @include block-row (10%,flex-end,flex-end);
-        font-weight: bold;
         > p{
             font-size: 0.8em;
         } 
@@ -115,23 +123,23 @@ article {
 .block-menu{
     position:relative;
     cursor: pointer;
-    &:active .rotate{
+    &:hover .rotate{
         visibility: visible;
         transform: rotate(360deg) ;
         
     }
-    &:active .animation{
+    &:hover .animation{
         width: 20%;
         transform: transform;
         background-color: $tertiary;
         visibility: visible;              
         }
-    &:active .price{
+    &:hover .price{
         transform: translateX(-55px);
     }
-    &:active  .text-wrap-ellipsis{
+    &:hover .text-wrap-ellipsis{
         text-overflow: ellipsis;
-        max-width: 50%;
+        max-width: 60%;
         white-space: nowrap;
         overflow: hidden;
     } 

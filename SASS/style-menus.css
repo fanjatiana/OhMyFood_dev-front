@@ -28,6 +28,10 @@ body {
   padding: 0;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
 /********************************HEADER***********************************/
 /*banniere du site*/
 .nav {
@@ -578,6 +582,10 @@ body {
   height: auto;
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
 }
 
 /********************************HEADER***********************************/
@@ -1345,6 +1353,14 @@ body {
   background-color: #f6f6f6;
 }
 
+h2 {
+  font-family: 'Shrikhand', cursive;
+}
+
+h4, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
 /***************************HEADER*******************************/
 .banner {
   width: 100%;
@@ -1605,7 +1621,6 @@ article .price {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-weight: bold;
 }
 
 article .price > p {
@@ -1617,13 +1632,13 @@ article .price > p {
   cursor: pointer;
 }
 
-.block-menu:active .rotate {
+.block-menu:hover .rotate {
   visibility: visible;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.block-menu:active .animation {
+.block-menu:hover .animation {
   width: 20%;
   -webkit-transform: transform;
           transform: transform;
@@ -1631,14 +1646,14 @@ article .price > p {
   visibility: visible;
 }
 
-.block-menu:active .price {
+.block-menu:hover .price {
   -webkit-transform: translateX(-55px);
           transform: translateX(-55px);
 }
 
-.block-menu:active .text-wrap-ellipsis {
+.block-menu:hover .text-wrap-ellipsis {
   text-overflow: ellipsis;
-  max-width: 50%;
+  max-width: 60%;
   white-space: nowrap;
   overflow: hidden;
 }

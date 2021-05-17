@@ -90,11 +90,14 @@ $desktop-menu:(
                 font-size:1.8em ;
                 cursor: pointer;
                 width: 30px;
+               
+                
         }
         .far{
                 transition: all 1s linear;
                 font-size:1.8em ;
                 width: 30px;
+                
         }
         &:hover{
                 .fas{
