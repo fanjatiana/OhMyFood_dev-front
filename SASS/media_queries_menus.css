@@ -202,6 +202,7 @@ p, h2, h3, h4 {
 .introduction > .intro-text p {
   font-size: 1em;
   width: 90%;
+  font-weight: lighter;
 }
 
 /*bouton explorez nos restaurants*/
@@ -763,6 +764,7 @@ p, h2, h3, h4 {
 .introduction > .intro-text p {
   font-size: 1em;
   width: 90%;
+  font-weight: lighter;
 }
 
 /*bouton explorez nos restaurants*/
@@ -1154,7 +1156,7 @@ p, h2, h3, h4 {
           animation-duration: 1.5s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  /*animation:spinner-container 3s linear ;*/
+  /*animation:spinner-container 3s linear forwards ;*/
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1381,13 +1383,10 @@ h4, h3 {
   font-family: 'Roboto', sans-serif;
 }
 
-<<<<<<< HEAD
 h3 {
   font-weight: lighter;
 }
 
-=======
->>>>>>> animation
 /***************************HEADER*******************************/
 .banner {
   width: 100%;
@@ -1655,7 +1654,7 @@ article .price > p {
 }
 
 /*section entrée/plat/dessert + animation*/
-.menu-liste {
+.menu-list {
   -webkit-animation-name: show-menu;
           animation-name: show-menu;
   -webkit-animation-duration: 1.2s;
@@ -1671,17 +1670,17 @@ article .price > p {
   opacity: 0;
 }
 
-.menu-liste--1 {
+.menu-list--1 {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 
-.menu-liste--2 {
+.menu-list--2 {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-.menu-liste--3 {
+.menu-list--3 {
   -webkit-animation-delay: 4.5s;
           animation-delay: 4.5s;
 }
@@ -1822,8 +1821,8 @@ article .price > p {
 }
 
 .block-menu:hover .price {
-  -webkit-transform: translateX(-55px);
-          transform: translateX(-55px);
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 
 .block-menu:hover .text-wrap-ellipsis {
@@ -1952,21 +1951,26 @@ article .price > p {
   opacity: 0.85;
 }
 
+/**********************media queries mobile************************/
 @media screen and (min-width: 350px) {
+  /*liste des menus, animation au hover :checked*/
+  .block-menu:hover .price {
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+}
+
+@media screen and (min-width: 530px) {
+  /*liste des menus, animation au hover :checked*/
   .block-menu:hover .price {
     -webkit-transform: translateX(-100px);
             transform: translateX(-100px);
   }
 }
 
-@media screen and (min-width: 469px) {
-  .block-menu:hover.price {
-    -webkit-transform: translateX(-120px);
-            transform: translateX(-120px);
-  }
-}
-
+/**********************media queries tablette************************/
 @media screen and (min-width: 601px) {
+  /*bannier*/
   .banner-menu {
     height: 400px;
     margin-bottom: 50px;
@@ -1980,9 +1984,11 @@ article .price > p {
   .banner-menu > .title-banner > h2 {
     text-align: center;
   }
+  /*main*/
   .container-menu h3 {
     text-align: center;
   }
+  /*liste des menus, animation au hover :checked*/
   .block-menu {
     width: 90%;
     margin: 1em auto;
@@ -1998,8 +2004,8 @@ article .price > p {
     margin-top: 45px;
   }
   .block-menu:hover .price {
-    -webkit-transform: translateX(-130px);
-            transform: translateX(-130px);
+    -webkit-transform: translateX(-110px);
+            transform: translateX(-110px);
   }
   .block-menu .rotate {
     width: 40px;
@@ -2015,9 +2021,11 @@ article .price > p {
 }
 
 @media screen and (min-width: 834px) {
+  /*banniere*/
   .banner-menu {
     height: 500px;
   }
+  /*liste des menus, animation au hover :checked*/
   .block-menu:hover .price {
     -webkit-transform: translateX(-160px);
             transform: translateX(-160px);
@@ -2028,7 +2036,9 @@ article .price > p {
   }
 }
 
+/**********************media queries desktop***********************/
 @media screen and (min-width: 1024px) {
+  /*banniere*/
   .banner-menu {
     background-image: none;
     height: auto;
@@ -2050,6 +2060,10 @@ article .price > p {
   .banner nav a:last-child img {
     width: 40%;
   }
+  .title-banner > h2 {
+    font-size: 1.8em;
+  }
+  /*Main*/
   .container-restaurant--francaise {
     background-image: url("../images/restaurants/Big/a_la_francaise.jpg");
     background-color: #f6f6f6;
@@ -2105,10 +2119,11 @@ article .price > p {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
-  .container-menu .menu-liste h3 {
+  .container-menu .menu-list h3 {
     width: 15%;
     margin: auto;
   }
+  /*liste des menus, animation au hover :checked*/
   .block-menu {
     position: relative;
   }
@@ -2126,6 +2141,7 @@ article .price > p {
     -webkit-transform: translateX(-100px);
             transform: translateX(-100px);
   }
+  /*bouton commander*/
   .btn-order {
     margin-bottom: 0;
     padding-top: 50px;
@@ -2152,7 +2168,7 @@ article .price > p {
     margin-top: 30px;
   }
   .info-omyfood > li {
-    width: 20%;
+    width: 30%;
   }
   .info-omyfood > li a {
     width: 100%;
@@ -2172,6 +2188,7 @@ article .price > p {
 }
 
 @media screen and (min-width: 1235px) {
+  /*liste des menus, animation au hover :checked*/
   .block-menu:hover .price {
     -webkit-transform: translateX(-140px);
             transform: translateX(-140px);
@@ -2179,16 +2196,20 @@ article .price > p {
 }
 
 @media screen and (min-width: 1640px) {
+  /*liste des menus, animation au hover :checked*/
   .block-menu:hover .price {
     -webkit-transform: translateX(-180px);
             transform: translateX(-180px);
   }
+  /*footer*/
   .info-omyfood a {
     font-size: 1.2em;
   }
 }
 
+/**********************media queries grand ecran************************/
 @media screen and (min-width: 2090px) {
+  /*liste des menus, animation au hover :checked*/
   .block-menu:hover .price {
     -webkit-transform: translateX(-230px);
             transform: translateX(-230px);

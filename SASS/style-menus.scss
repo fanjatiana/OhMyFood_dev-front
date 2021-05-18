@@ -75,6 +75,7 @@ h3{
         width: 30px;
         & i{
             @include block-row (auto, center, center);
+            margin-left: 1em;
             
         }
     }
@@ -126,7 +127,7 @@ article {
     }
 }
 /*section entrée/plat/dessert + animation*/
-.menu-liste{
+.menu-list{
     animation-name: show-menu;
     animation-duration:1.2s ;
     animation-delay: 0s;
@@ -194,7 +195,7 @@ article {
         visibility: visible;              
         }
     &:hover .price{
-        transform: translateX(-55px);
+        transform: translateX(-50px);
     }
     &:hover .text-wrap-ellipsis{
         text-overflow: ellipsis;
@@ -203,15 +204,9 @@ article {
         overflow: hidden;
     } 
    
-<<<<<<< HEAD
     .price{
         transition-duration:250ms;
         transition-timing-function:ease-in;
-=======
-    & .price{
-        transition-duration:400ms;
-        transition-timing-function:both;
->>>>>>> animation
         transition-delay: 0s;
         transition-property: transform;
         transform: translateX(0);

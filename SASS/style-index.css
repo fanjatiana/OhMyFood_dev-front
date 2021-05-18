@@ -182,6 +182,7 @@ p, h2, h3, h4 {
 .introduction > .intro-text p {
   font-size: 1em;
   width: 90%;
+  font-weight: lighter;
 }
 
 /*bouton explorez nos restaurants*/
@@ -379,6 +380,13 @@ p, h2, h3, h4 {
           box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
   margin: 1em;
   position: relative;
+}
+
+.restaurant-list article:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .restaurant-list .new::after {

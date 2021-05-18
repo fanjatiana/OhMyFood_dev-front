@@ -13,6 +13,7 @@
         cursor:pointer;
 }
 
+
 /*propriétés flexbox*/
 @mixin block-column ($colour:$light-bg-color, $size:100%){
         width: $size;;
@@ -30,6 +31,7 @@
         align-items: $y-position;
         
 }
+
 
 /* boucle background image des menus*/
 /*$selector:(ex:francaise), $img:lien url*/
@@ -80,6 +82,8 @@ $desktop-menu:(
         }
 }
 
+
+
 /*animation coeurs*/
 @mixin animation-heart{
         .fas{
@@ -111,6 +115,8 @@ $desktop-menu:(
                 }
         }        
 }
+
+
 /*mixin bloc flottant*/
 @mixin block_floated{
         width: 20%;

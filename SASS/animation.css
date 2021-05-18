@@ -192,6 +192,7 @@ p, h2, h3, h4 {
 .introduction > .intro-text p {
   font-size: 1em;
   width: 90%;
+  font-weight: lighter;
 }
 
 /*bouton explorez nos restaurants*/
@@ -583,7 +584,7 @@ p, h2, h3, h4 {
           animation-duration: 1.5s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  /*animation:spinner-container 3s linear ;*/
+  /*animation:spinner-container 3s linear forwards ;*/
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

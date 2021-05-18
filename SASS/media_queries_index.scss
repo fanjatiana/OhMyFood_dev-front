@@ -100,6 +100,27 @@
     }
 }
 /**********************media queries desktop***********************/
+@media screen and (min-width: 1024px){
+      /*footer*/
+      .container{
+        >h4{
+            img{
+                width: 15%;
+            }
+        }
+    }
+    .info-omyfood{
+        @include block-row(90%,space-around,initial);
+        margin-top:30px;
+        > li{
+            width: 30%;
+            &  a{
+                @include block-row(100%,space-around,initial)
+            }
+        }
+    } 
+}
+
 @media screen and (min-width:1280px){
     /*banniere*/
     .nav {
@@ -174,7 +195,7 @@
         background: #f6f6f6;;
         width: 70%;
         margin-bottom: 50px;
-        border-radius: 20px;
+        border-radius: 10px;
         > .title{
             width: 100%;
             h3{
@@ -188,7 +209,7 @@
 
             & article{
                 width: 40%;
-                margin: 0 2em 2em 2em;
+                margin: 0 1.5em 2em 1.5em;
             }
         }
     }

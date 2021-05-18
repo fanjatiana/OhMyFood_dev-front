@@ -192,6 +192,7 @@ p, h2, h3, h4 {
 .introduction > .intro-text p {
   font-size: 1em;
   width: 90%;
+  font-weight: lighter;
 }
 
 /*bouton explorez nos restaurants*/
@@ -753,6 +754,7 @@ p, h2, h3, h4 {
 .introduction > .intro-text p {
   font-size: 1em;
   width: 90%;
+  font-weight: lighter;
 }
 
 /*bouton explorez nos restaurants*/
@@ -1144,7 +1146,7 @@ p, h2, h3, h4 {
           animation-duration: 1.5s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  /*animation:spinner-container 3s linear ;*/
+  /*animation:spinner-container 3s linear forwards ;*/
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1561,6 +1563,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 1em;
 }
 
 /********liste des menus************/
@@ -1642,7 +1645,7 @@ article .price > p {
 }
 
 /*section entrée/plat/dessert + animation*/
-.menu-liste {
+.menu-list {
   -webkit-animation-name: show-menu;
           animation-name: show-menu;
   -webkit-animation-duration: 1.2s;
@@ -1658,17 +1661,17 @@ article .price > p {
   opacity: 0;
 }
 
-.menu-liste--1 {
+.menu-list--1 {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 
-.menu-liste--2 {
+.menu-list--2 {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-.menu-liste--3 {
+.menu-list--3 {
   -webkit-animation-delay: 4.5s;
           animation-delay: 4.5s;
 }
@@ -1809,8 +1812,8 @@ article .price > p {
 }
 
 .block-menu:hover .price {
-  -webkit-transform: translateX(-55px);
-          transform: translateX(-55px);
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 
 .block-menu:hover .text-wrap-ellipsis {
