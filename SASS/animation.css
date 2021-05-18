@@ -28,7 +28,7 @@ body {
   padding: 0;
 }
 
-p {
+p, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -291,9 +291,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: flex-star;
-      -ms-flex-pack: flex-star;
-          justify-content: flex-star;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -503,6 +503,7 @@ p {
 
 .icone-favorite i {
   font-size: 1.8em;
+  margin-right: 1em;
 }
 
 /**********************************FOOTER*******************************/

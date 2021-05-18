@@ -141,7 +141,7 @@ p, h2 , h3 , h4{
         padding-left: 0;
         @include block-column(#FFF);
         > li{
-        @include block-row(90%, flex-star,center);
+        @include block-row(90%, flex-start,center);
         border:1px $light-bg-color solid;
         border-radius:20px;
         box-shadow: 6px 7px 9px -5px rgba(0,0,0,0.67);
