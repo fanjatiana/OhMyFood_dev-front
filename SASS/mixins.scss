@@ -80,7 +80,7 @@ $desktop-menu:(
         }
 }
 
-
+/*animation coeurs*/
 @mixin animation-heart{
         .fas{
                 position: absolute;
@@ -111,7 +111,7 @@ $desktop-menu:(
                 }
         }        
 }
-
+/*mixin bloc flottant*/
 @mixin block_floated{
         width: 20%;
         height: 380px;
@@ -129,5 +129,6 @@ $desktop-menu:(
         border-radius: 10px;
         /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
 }
+
 
 

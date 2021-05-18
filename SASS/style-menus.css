@@ -4,6 +4,8 @@
 /* boucle background image des menus*/
 /*$selector:(ex:francaise), $img:lien url*/
 /*Boucle background image menus version desktop*/
+/*animation coeurs*/
+/*mixin bloc flottant*/
 /*variables couleur*/
 /*variables taille*/
 /*variable étiquette nouveauté*/
@@ -13,6 +15,8 @@
 /* boucle background image des menus*/
 /*$selector:(ex:francaise), $img:lien url*/
 /*Boucle background image menus version desktop*/
+/*animation coeurs*/
+/*mixin bloc flottant*/
 /*variables couleur*/
 /*variables taille*/
 /*variable étiquette nouveauté*/
@@ -561,6 +565,8 @@ p, h2, h3, h4 {
 /* boucle background image des menus*/
 /*$selector:(ex:francaise), $img:lien url*/
 /*Boucle background image menus version desktop*/
+/*animation coeurs*/
+/*mixin bloc flottant*/
 /*variables couleur*/
 /*variables taille*/
 /*variable étiquette nouveauté*/
@@ -570,6 +576,8 @@ p, h2, h3, h4 {
 /* boucle background image des menus*/
 /*$selector:(ex:francaise), $img:lien url*/
 /*Boucle background image menus version desktop*/
+/*animation coeurs*/
+/*mixin bloc flottant*/
 /*variables couleur*/
 /*variables taille*/
 /*variable étiquette nouveauté*/
@@ -1419,7 +1427,7 @@ h4, h3 {
 }
 
 /******************************MAIN*****************************/
-/*header*/
+/*********header***************/
 /*background-image*/
 .banner-menu {
   height: 300px;
@@ -1551,7 +1559,7 @@ h4, h3 {
           align-items: center;
 }
 
-/*liste des plats*/
+/********liste des menus************/
 /*propriétés générales*/
 .container-menu {
   width: 100%;
@@ -1629,11 +1637,12 @@ article .price > p {
   font-size: 0.8em;
 }
 
+/*section entrée/plat/dessert + animation*/
 .menu-liste {
   -webkit-animation-name: show-menu;
           animation-name: show-menu;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
   -webkit-animation-timing-function: linear;
@@ -1646,18 +1655,18 @@ article .price > p {
 }
 
 .menu-liste--1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .menu-liste--2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .menu-liste--3 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
 }
 
 @-webkit-keyframes show-menu {
@@ -1678,15 +1687,16 @@ article .price > p {
   }
 }
 
+/*liste des entrées/plats/desserts + effets au hover et animation apparition progressive**/
 .block-menu {
   position: relative;
   cursor: pointer;
   -webkit-animation-name: show-list;
           animation-name: show-list;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
@@ -1697,53 +1707,63 @@ article .price > p {
 }
 
 .block-menu--1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .block-menu--2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 .block-menu--3 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.block-menu--4 {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.block-menu--5 {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-.block-menu--4 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-
-.block-menu--5 {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-
 .block-menu--6 {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.block-menu--7 {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+.block-menu--8 {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+.block-menu--9 {
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
+}
+
+.block-menu--10 {
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
 }
 
-.block-menu--7 {
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+.block-menu--11 {
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
 }
 
-.block-menu--8 {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-
-.block-menu--9 {
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-
-.block-menu--10 {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+.block-menu--12 {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
 }
 
 @-webkit-keyframes show-list {

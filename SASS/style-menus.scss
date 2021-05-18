@@ -48,7 +48,7 @@ h4 , h3{
 }
 
 /******************************MAIN*****************************/
-/*header*/
+/*********header***************/
 /*background-image*/
 .banner-menu{
     @include bg-image-property(francaise);
@@ -76,7 +76,7 @@ h4 , h3{
 }
 
 
-/*liste des plats*/
+/********liste des menus************/
 /*propriétés générales*/
 .container-menu{
     width: 100%;
@@ -119,10 +119,10 @@ article {
         } 
     }
 }
-
+/*section entrée/plat/dessert + animation*/
 .menu-liste{
     animation-name: show-menu;
-    animation-duration:3s ;
+    animation-duration:1.2s ;
     animation-delay: 0s;
     animation-timing-function:linear;
     animation-fill-mode:both ;
@@ -130,7 +130,7 @@ article {
     opacity: 0;
     @for $i from 1 through 3{
         &--#{$i}{
-                animation-delay: $i * 1s;     
+                animation-delay: $i * 1.5s;     
         }
         $i:1;
         
@@ -148,24 +148,21 @@ article {
     }
     
 }
-
-
-
+/*liste des entrées/plats/desserts + effets au hover et animation apparition progressive**/
 .block-menu{
     position:relative;
     cursor: pointer;
     animation-name: show-list;
-    animation-duration:1s ;
-    animation-delay: 1s;
+    animation-duration:0.6s ;
+    animation-delay: 0.1s;
     animation-timing-function:linear ;
     animation-iteration-count: 1 ;
     animation-fill-mode: both;
     opacity: 0;
-    @for $i from 1 through 10{
+    @for $i from 1 through 12{
         &--#{$i}{
-                animation-delay: $i * 1s;     
-        }
-        
+                animation-delay: $i * .6s;     
+        }   
     }
     @keyframes show-list{
         from{
@@ -179,7 +176,6 @@ article {
             
         }
     }
- 
 
     &:hover .rotate{
         visibility: visible;
@@ -202,7 +198,7 @@ article {
         overflow: hidden;
     } 
    
-    .price{
+    & .price{
         transition-duration:400ms;
         transition-timing-function:both;
         transition-delay: 0s;
@@ -213,9 +209,8 @@ article {
         }
         
     }
-   
-    
-    .animation{
+
+    & .animation{
         content: "";
         width: 3px;
         height: 100%;
@@ -236,7 +231,7 @@ article {
         visibility: hidden;
     }
 
-    .rotate{
+    & .rotate{
         content: "";
         background-image: url(../images/icone/check-solid.svg);
         background-size: 30%;
