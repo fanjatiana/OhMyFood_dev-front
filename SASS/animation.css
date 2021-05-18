@@ -28,7 +28,7 @@ body {
   padding: 0;
 }
 
-p {
+p, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -503,6 +503,7 @@ p {
 
 .icone-favorite i {
   font-size: 1.8em;
+  margin-right: 1em;
 }
 
 /**********************************FOOTER*******************************/

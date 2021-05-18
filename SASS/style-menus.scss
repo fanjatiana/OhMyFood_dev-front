@@ -120,9 +120,67 @@ article {
     }
 }
 
+.menu-liste{
+    animation-name: show-menu;
+    animation-duration:3s ;
+    animation-delay: 0s;
+    animation-timing-function:linear;
+    animation-fill-mode:both ;
+    animation-iteration-count: 1 ;
+    opacity: 0;
+    @for $i from 1 through 3{
+        &--#{$i}{
+                animation-delay: $i * 1s;     
+        }
+        $i:1;
+        
+    }
+    @keyframes show-menu {
+        from{
+            opacity: 0;
+           
+        }
+        to{
+            opacity: 1;
+          
+            
+        }
+    }
+    
+}
+
+
+
 .block-menu{
     position:relative;
     cursor: pointer;
+    animation-name: show-list;
+    animation-duration:1s ;
+    animation-delay: 1s;
+    animation-timing-function:linear ;
+    animation-iteration-count: 1 ;
+    animation-fill-mode: both;
+    opacity: 0;
+    @for $i from 1 through 10{
+        &--#{$i}{
+                animation-delay: $i * 1s;     
+        }
+        
+    }
+    @keyframes show-list{
+        from{
+            opacity: 0;
+            transform: translateY(6px);
+           
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0px) ;
+            
+        }
+    }
+ 
+
     &:hover .rotate{
         visibility: visible;
         transform: rotate(360deg) ;
