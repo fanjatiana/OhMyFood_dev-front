@@ -3,24 +3,6 @@
 @import "style-menus.scss";
 
 
-/**********************media queries mobile************************/
-@media screen and ( min-width: 350px){
-    /*liste des menus, animation au hover :checked*/
-    .block-menu{
-        &:hover .price{
-            transform: translateX(-80px);
-        }
-    }
-}
-
-@media screen and ( min-width: 530px){
-    /*liste des menus, animation au hover :checked*/
-    .block-menu{
-        &:hover .price{
-            transform: translateX(-100px);
-        }
-    }
-}
 
 /**********************media queries tablette************************/
 @media screen and (min-width: 601px){
@@ -28,7 +10,6 @@
     .banner-menu{
         height: 400px;
         margin-bottom: 50px;
-        
         > .title-banner{
             flex-direction: column;
             > h2{
@@ -44,33 +25,7 @@
        }
     }
 
-    /*liste des menus, animation au hover :checked*/
-    .block-menu{
-        width: 90%;
-        margin:1em auto;
-        & .title-menu{
-            h4{
-                font-size: 1em;
-            }
-            p{
-                font-size: 0.9em;
-            }
-        }
-        & .price{
-            p{
-                font-size: 1em;
-                margin-top:45px;
-            }
-        }    
-        &:hover .price{
-                transform: translateX(-110px);
-            }
-        .rotate{
-            width: 40px;
-            height: 40px;
-        }
-        
-    }
+
     
 /*footer*/
      .container{
@@ -90,23 +45,7 @@
         height: 500px;
     }
 
-    /*liste des menus, animation au hover :checked*/
-    .block-menu{
-       
-        &:hover .price{
-            transform: translateX(-160px);
-        }
-        .rotate{
-            width: 40px;
-            height: 40px;
-        }
-    }
-    
-    
-    
 }
-
-
 /**********************media queries desktop***********************/
 @media screen and (min-width: 1024px){
     /*banniere*/
@@ -121,7 +60,7 @@
     }
 
     .banner{
-        nav{
+        & .nav{
             > a:first-child{
                 width: 5%;
                 & .fa-arrow-left{
@@ -169,26 +108,9 @@
             & h3{
                 width: 15%;
                 margin: auto;
+                color: #FFF;
             }
         }  
-    }
-    /*liste des menus, animation au hover :checked*/
-    .block-menu{
-        position:relative;
-        &:hover .rotate{
-            visibility: visible;
-            transform: rotate(360deg) ;
-            
-        }
-        &:hover .animation{
-            width: 20%;
-            background-color:$tertiary;
-            visibility: visible;              
-            }
-        &:hover .price{
-            transform: translateX(-100px);
-        }
-      
     }
      /*bouton commander*/
     .btn-order{
@@ -217,23 +139,9 @@
     }    
 }
 
-@media screen and (min-width: 1235px){
-    /*liste des menus, animation au hover :checked*/
-    .block-menu{
-        &:hover .price{
-            transform: translateX(-140px);
-        }
-        
-    }
-}
 
 @media screen and (min-width: 1640px){
-    /*liste des menus, animation au hover :checked*/
-    .block-menu{
-        &:hover .price{
-            transform: translateX(-180px);
-        }    
-    }
+
 
     /*footer*/
     .info-omyfood{
@@ -244,19 +152,18 @@
 }
 
 
-/**********************media queries grand ecran************************/
-@media screen and (min-width: 2090px){
-    /*liste des menus, animation au hover :checked*/
-    .block-menu{
-        &:hover .price{
-            transform: translateX(-230px);
-        }
-    }
-}
+
 
 @media screen and (min-width: 2901px){
+    body{
+        height: 100%;
+        
+    }
+    
     main{
         max-width: 2200px;
+        
+
     }
 }
 

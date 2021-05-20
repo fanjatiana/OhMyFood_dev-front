@@ -402,6 +402,13 @@ p, h2, h3, h4 {
   position: relative;
 }
 
+.restaurant-list article:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .restaurant-list .new::after {
   content: "Nouveau";
   color: #008766;
@@ -962,6 +969,13 @@ p, h2, h3, h4 {
           box-shadow: 6px 7px 9px -5px rgba(0, 0, 0, 0.67);
   margin: 1em;
   position: relative;
+}
+
+.restaurant-list article:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .restaurant-list .new::after {
@@ -1573,6 +1587,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 1em;
 }
 
 /********liste des menus************/
@@ -1654,11 +1669,12 @@ article .price > p {
 }
 
 /*section entrée/plat/dessert + animation*/
-.menu-list {
+/*liste des entrées/plats/desserts + effets au hover et animation apparition progressive**/
+.animation {
   -webkit-animation-name: show-menu;
           animation-name: show-menu;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
   -webkit-animation-timing-function: linear;
@@ -1670,159 +1686,100 @@ article .price > p {
   opacity: 0;
 }
 
-.menu-list--1 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+.animation--1 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
-.menu-list--2 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+.animation--2 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
-.menu-list--3 {
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
+.animation--3 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.animation--4 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.animation--5 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.animation--6 {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.animation--7 {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.animation--8 {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.animation--9 {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.animation--10 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.animation--11 {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+.animation--12 {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+.animation--13 {
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
 }
 
 @-webkit-keyframes show-menu {
   from {
     opacity: 0;
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @keyframes show-menu {
   from {
     opacity: 0;
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
-/*liste des entrées/plats/desserts + effets au hover et animation apparition progressive**/
 .block-menu {
-  position: relative;
-  cursor: pointer;
-  -webkit-animation-name: show-list;
-          animation-name: show-list;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  opacity: 0;
-}
-
-.block-menu--1 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.block-menu--2 {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.block-menu--3 {
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
-}
-
-.block-menu--4 {
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
-}
-
-.block-menu--5 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-.block-menu--6 {
-  -webkit-animation-delay: 3.6s;
-          animation-delay: 3.6s;
-}
-
-.block-menu--7 {
-  -webkit-animation-delay: 4.2s;
-          animation-delay: 4.2s;
-}
-
-.block-menu--8 {
-  -webkit-animation-delay: 4.8s;
-          animation-delay: 4.8s;
-}
-
-.block-menu--9 {
-  -webkit-animation-delay: 5.4s;
-          animation-delay: 5.4s;
-}
-
-.block-menu--10 {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-.block-menu--11 {
-  -webkit-animation-delay: 6.6s;
-          animation-delay: 6.6s;
-}
-
-.block-menu--12 {
-  -webkit-animation-delay: 7.2s;
-          animation-delay: 7.2s;
-}
-
-@-webkit-keyframes show-list {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes show-list {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-.block-menu:hover .rotate {
-  visibility: visible;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.block-menu:hover .animation {
-  width: 20%;
-  background-color: #99E2D0;
-  visibility: visible;
-}
-
-.block-menu:hover .price {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  height: 70px;
+  overflow: hidden;
 }
 
 .block-menu:hover .text-wrap-ellipsis {
@@ -1832,7 +1789,25 @@ article .price > p {
   overflow: hidden;
 }
 
-.block-menu .price {
+.block-menu:hover .price {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.block-menu:hover .price .fas {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.block-menu > .price {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: ease-in;
@@ -1843,21 +1818,22 @@ article .price > p {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(51%);
+          transform: translateX(51%);
 }
 
-.block-menu .price > p {
-  margin-top: 40px;
+.block-menu > .price > p {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.block-menu .animation {
-  content: "";
-  width: 3px;
-  height: 100%;
-  background-color: #99E2D0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+.block-menu > .price span {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1867,34 +1843,16 @@ article .price > p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition-property: width;
-  transition-property: width;
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  position: absolute;
-  right: 0;
-  top: 0;
-  visibility: hidden;
+  background-color: #99E2D0;
+  min-height: 100%;
 }
 
-.block-menu .rotate {
-  content: "";
-  background-image: url(../images/icone/check-solid.svg);
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-  border: 2px #000 solid;
-  width: 20px;
-  height: 20px;
+.block-menu > .price span .fas {
+  background-color: #99E2D0;
+  color: #FFF;
+  border: 2px #FFF solid;
+  padding: 5px;
   border-radius: 50%;
-  padding: 0.5px;
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
   -webkit-transition-timing-function: linear;
@@ -1905,9 +1863,12 @@ article .price > p {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  visibility: hidden;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.title-menu {
+  padding-left: 14px;
 }
 
 /*FOOTER contenu Main*/
@@ -1951,23 +1912,6 @@ article .price > p {
   opacity: 0.85;
 }
 
-/**********************media queries mobile************************/
-@media screen and (min-width: 350px) {
-  /*liste des menus, animation au hover :checked*/
-  .block-menu:hover .price {
-    -webkit-transform: translateX(-80px);
-            transform: translateX(-80px);
-  }
-}
-
-@media screen and (min-width: 530px) {
-  /*liste des menus, animation au hover :checked*/
-  .block-menu:hover .price {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-  }
-}
-
 /**********************media queries tablette************************/
 @media screen and (min-width: 601px) {
   /*bannier*/
@@ -1988,29 +1932,6 @@ article .price > p {
   .container-menu h3 {
     text-align: center;
   }
-  /*liste des menus, animation au hover :checked*/
-  .block-menu {
-    width: 90%;
-    margin: 1em auto;
-  }
-  .block-menu .title-menu h4 {
-    font-size: 1em;
-  }
-  .block-menu .title-menu p {
-    font-size: 0.9em;
-  }
-  .block-menu .price p {
-    font-size: 1em;
-    margin-top: 45px;
-  }
-  .block-menu:hover .price {
-    -webkit-transform: translateX(-110px);
-            transform: translateX(-110px);
-  }
-  .block-menu .rotate {
-    width: 40px;
-    height: 40px;
-  }
   /*footer*/
   .container > h4 {
     text-align: center;
@@ -2025,15 +1946,6 @@ article .price > p {
   .banner-menu {
     height: 500px;
   }
-  /*liste des menus, animation au hover :checked*/
-  .block-menu:hover .price {
-    -webkit-transform: translateX(-160px);
-            transform: translateX(-160px);
-  }
-  .block-menu .rotate {
-    width: 40px;
-    height: 40px;
-  }
 }
 
 /**********************media queries desktop***********************/
@@ -2047,17 +1959,17 @@ article .price > p {
   .banner-menu .icone-favorite {
     margin-bottom: 3em;
   }
-  .banner nav > a:first-child {
+  .banner .nav > a:first-child {
     width: 5%;
   }
-  .banner nav > a:first-child .fa-arrow-left {
+  .banner .nav > a:first-child .fa-arrow-left {
     font-size: 2em;
   }
-  .banner nav a:last-child {
+  .banner .nav a:last-child {
     width: 95%;
     text-align: center;
   }
-  .banner nav a:last-child img {
+  .banner .nav a:last-child img {
     width: 40%;
   }
   .title-banner > h2 {
@@ -2122,24 +2034,7 @@ article .price > p {
   .container-menu .menu-list h3 {
     width: 15%;
     margin: auto;
-  }
-  /*liste des menus, animation au hover :checked*/
-  .block-menu {
-    position: relative;
-  }
-  .block-menu:hover .rotate {
-    visibility: visible;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  .block-menu:hover .animation {
-    width: 20%;
-    background-color: #99E2D0;
-    visibility: visible;
-  }
-  .block-menu:hover .price {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    color: #FFF;
   }
   /*bouton commander*/
   .btn-order {
@@ -2187,36 +2082,17 @@ article .price > p {
   }
 }
 
-@media screen and (min-width: 1235px) {
-  /*liste des menus, animation au hover :checked*/
-  .block-menu:hover .price {
-    -webkit-transform: translateX(-140px);
-            transform: translateX(-140px);
-  }
-}
-
 @media screen and (min-width: 1640px) {
-  /*liste des menus, animation au hover :checked*/
-  .block-menu:hover .price {
-    -webkit-transform: translateX(-180px);
-            transform: translateX(-180px);
-  }
   /*footer*/
   .info-omyfood a {
     font-size: 1.2em;
   }
 }
 
-/**********************media queries grand ecran************************/
-@media screen and (min-width: 2090px) {
-  /*liste des menus, animation au hover :checked*/
-  .block-menu:hover .price {
-    -webkit-transform: translateX(-230px);
-            transform: translateX(-230px);
-  }
-}
-
 @media screen and (min-width: 2901px) {
+  body {
+    height: 100%;
+  }
   main {
     max-width: 2200px;
   }

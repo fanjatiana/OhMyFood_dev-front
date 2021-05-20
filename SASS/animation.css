@@ -392,6 +392,13 @@ p, h2, h3, h4 {
   position: relative;
 }
 
+.restaurant-list article:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .restaurant-list .new::after {
   content: "Nouveau";
   color: #008766;
