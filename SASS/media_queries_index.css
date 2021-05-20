@@ -21,10 +21,6 @@
   .logo img {
     width: 25em;
   }
-  /*barre de recherche*/
-  .search-bar .fa-map-marker-alt {
-    left: 25%;
-  }
   /*bloc fonctionnement*/
   .block-list ol > li {
     width: 70%;
@@ -61,10 +57,6 @@
 
 /**********************media queries tablette************************/
 @media screen and (min-width: 730px) {
-  /*barre de recherche*/
-  .search-bar .fa-map-marker-alt {
-    left: 30%;
-  }
   /*bloc fontionnement*/
   .block-list {
     width: 100%;
@@ -197,9 +189,6 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-  .part-search > form > .search-bar .fa-map-marker-alt {
-    left: 50%;
   }
   /*presentation du site*/
   .introduction > .intro-text {

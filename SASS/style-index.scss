@@ -46,23 +46,24 @@ p, h2 , h3 , h4{
         font-size: 0.9em;    
         color:$dark-bg-color;
         width: 10%;
-        text-align: right;
-        position: absolute;
-        left:  17%;
         padding-top: 1em;
+        margin-right: 5px;
     }
     label{
         width: 100%;
+    }
+    & .enter-a-city{
+        width: 200px;
+        margin: auto;
+        display:flex;
+        justify-content: space-between;
     }
     input{
         background-color: transparent;
         width: 100%;
         border:none;
         color:$dark-bg-color;
-        position: relative; 
-        left:0;
         height: 2.7em;
-        text-align: center;
         &::placeholder{
             text-align: center;
             font-size: 0.9em;

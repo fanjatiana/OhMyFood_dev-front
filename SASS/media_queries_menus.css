@@ -103,8 +103,6 @@ p, h2, h3, h4 {
   color: #353535;
   width: 10%;
   text-align: right;
-  position: absolute;
-  left: 17%;
   padding-top: 1em;
 }
 
@@ -112,15 +110,23 @@ p, h2, h3, h4 {
   width: 100%;
 }
 
+.search-bar .enter-a-city {
+  width: 200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .search-bar input {
   background-color: transparent;
   width: 100%;
   border: none;
   color: #353535;
-  position: relative;
-  left: 0;
   height: 2.7em;
-  text-align: center;
 }
 
 .search-bar input::-webkit-input-placeholder {
@@ -672,8 +678,6 @@ p, h2, h3, h4 {
   color: #353535;
   width: 10%;
   text-align: right;
-  position: absolute;
-  left: 17%;
   padding-top: 1em;
 }
 
@@ -681,15 +685,23 @@ p, h2, h3, h4 {
   width: 100%;
 }
 
+.search-bar .enter-a-city {
+  width: 200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .search-bar input {
   background-color: transparent;
   width: 100%;
   border: none;
   color: #353535;
-  position: relative;
-  left: 0;
   height: 2.7em;
-  text-align: center;
 }
 
 .search-bar input::-webkit-input-placeholder {

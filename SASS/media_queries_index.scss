@@ -17,12 +17,6 @@
             width: 25em;
         }
     }
-    /*barre de recherche*/
-    .search-bar {
-        & .fa-map-marker-alt{
-            left:25%;
-        }
-    }
     /*bloc fonctionnement*/
     .block-list{
         ol > li{
@@ -66,12 +60,6 @@
 }
 /**********************media queries tablette************************/
 @media screen and (min-width:730px) {
-    /*barre de recherche*/
-    .search-bar {
-        & .fa-map-marker-alt{
-            left:30%;
-        }
-    }
     /*bloc fontionnement*/
     .block-list{
         width: 100%;
@@ -143,11 +131,6 @@
         > form{
             display: flex;
             flex-direction: column-reverse;
-            > .search-bar{
-                & .fa-map-marker-alt{
-                    left: 50%;
-                }   
-            }
         }
     } 
     /*presentation du site*/   
