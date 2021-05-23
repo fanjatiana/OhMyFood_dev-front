@@ -46,6 +46,8 @@
     }
 
 }
+
+
 /**********************media queries desktop***********************/
 @media screen and (min-width: 1024px){
     /*banniere*/
@@ -113,7 +115,6 @@
         }  
     }
 
-    
      /*bouton commander*/
     .btn-order{
         margin-bottom: 0;
@@ -141,10 +142,7 @@
     }    
 }
 
-
 @media screen and (min-width: 1640px){
-
-
     /*footer*/
     .info-omyfood{
         &  a{
@@ -154,7 +152,7 @@
 }
 
 
-
+/**********************media queries grand écran***********************/
 
 @media screen and (min-width: 2901px){
     body{
@@ -168,4 +166,3 @@
 
     }
 }
-

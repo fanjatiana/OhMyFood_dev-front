@@ -2101,6 +2101,7 @@ article .price > p {
   }
 }
 
+/**********************media queries grand écran***********************/
 @media screen and (min-width: 2901px) {
   body {
     height: 100%;

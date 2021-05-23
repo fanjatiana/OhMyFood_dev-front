@@ -82,8 +82,6 @@ $desktop-menu:(
         }
 }
 
-
-
 /*animation coeurs*/
 @mixin animation-heart{
         .fas{
@@ -93,9 +91,7 @@ $desktop-menu:(
                 transition: all .4s linear;
                 font-size:1.8em ;
                 cursor: pointer;
-                width: 30px;
-               
-                
+                width: 30px;        
         }
         .far{
                 transition: all 1s linear;
