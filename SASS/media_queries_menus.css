@@ -102,8 +102,8 @@ p, h2, h3, h4 {
   font-size: 0.9em;
   color: #353535;
   width: 10%;
-  text-align: right;
   padding-top: 1em;
+  margin-right: 5px;
 }
 
 .search-bar label {
@@ -677,8 +677,8 @@ p, h2, h3, h4 {
   font-size: 0.9em;
   color: #353535;
   width: 10%;
-  text-align: right;
   padding-top: 1em;
+  margin-right: 5px;
 }
 
 .search-bar label {
@@ -2045,7 +2045,7 @@ article .price > p {
   }
   .container-menu .menu-list h3 {
     width: 15%;
-    margin: auto;
+    margin: 1em auto;
     color: #FFF;
   }
   /*bouton commander*/
